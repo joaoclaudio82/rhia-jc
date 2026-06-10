@@ -1,0 +1,574 @@
+dataset,arquivo,nome_gab,exp_gab,erro,nome_app,exp_app,nome_ok,exp_capturadas,empresas_ok,cargos_ok
+synth_filled,docx/047_gestor_de_propriedade_mariana_oliveira_monteiro.docx,Mariana Oliveira Monteiro,3,,Mariana Oliveira Monteiro,0,True,0,0,0
+synth_filled,docx/049_curriculo_de_estagiarios_de_recursos_humanos_rafael_monteiro_freitas.docx,Rafael Monteiro Freitas,1,,Rafael Monteiro Freitas,2,True,1,1,1
+synth_filled,docx/050_cv_de_janaporubska_gmail_com_igor_pereira_costa.docx,Igor Pereira Costa,2,,Igor Pereira Costa,5,True,2,2,2
+synth_filled,docx/052_curriculo_da_pesquisa_igor_rodrigues_gomes.docx,Igor Rodrigues Gomes,3,,Igor Rodrigues Gomes,3,True,3,0,0
+synth_filled,docx/053_representante_de_vendas_na_adidas_amostra_de_enzo_correia_moreira.docx,Enzo Correia Moreira,2,,Enzo Correia Moreira,2,True,2,1,2
+synth_filled,docx/054_adidas_sales_representative_resume_template_vincius_ribeiro_nascimento.docx,Vinícius Ribeiro Nascimento,3,,Vinícius Ribeiro Nascimento,1,True,1,0,0
+synth_filled,docx/055_gerente_de_vendas_de_localizacao_na_advantage_igor_ferreira_ribeiro.docx,Igor Ferreira Ribeiro,3,,Igor Ferreira Ribeiro,3,True,3,3,3
+synth_filled,docx/056_curriculo_do_aequs_assistant_manager_rodrigo_pereira_ribeiro.docx,Rodrigo Pereira Ribeiro,3,,Rodrigo Pereira Ribeiro,3,True,3,2,3
+synth_filled,docx/057_curriculo_do_engenheiro_de_design_aeromobil_beatriz_freitas_mendes.docx,Beatriz Freitas Mendes,3,,Eng. Beatriz Freitas Mendes MEc,4,True,3,3,0
+synth_filled,docx/058_estagiario_de_engenharia_de_software_na_agile_igor_martins_carvalho.docx,Igor Martins Carvalho,2,,Ensino Médio com Habilitação Técnica em Informática,2,False,2,0,2
+synth_filled,docx/059_curriculo_da_air_france_leonardo_macedo_moreira.docx,Leonardo Macedo Moreira,2,,Leonardo Macedo Moreira,1,True,1,0,0
+synth_filled,docx/060_air_france_team_manager_retomar_amostra_de_cu_eduardo_martins_costa.docx,Eduardo Martins Costa,3,,Eduardo Martins Costa,3,True,3,0,0
+synth_filled,docx/062_curriculo_de_desenvolvedor_movel_isabela_ribeiro_costa.docx,Isabela Ribeiro Costa,3,,Isabela Ribeiro Costa,4,True,3,0,1
+synth_filled,docx/064_engenheiro_de_software_amostra_de_curriculo_c_joo_fernandes_ferreira.docx,João Fernandes Ferreira,3,,João Fernandes Ferreira,2,True,2,1,1
+synth_filled,docx/065_engenheiro_de_produto_na_alten_resume_amostra_priscila_moreira_gomes.docx,Priscila Moreira Gomes,4,,PRISCILA MOREIRA GOMES,4,True,4,4,4
+synth_filled,docx/066_curriculo_de_analista_de_dados_na_amazon_joo_macedo_pereira.docx,João Macedo Pereira,3,,João Macedo Pereira,2,True,2,2,2
+synth_filled,docx/067_curriculo_de_analista_de_negocios_na_amazon_ana_teixeira_gomes.docx,Ana Teixeira Gomes,3,,Ana Teixeira Gomes,3,True,3,3,3
+synth_filled,docx/068_engenheiro_de_desenvolvimento_de_software_na_priscila_martins_teixeira.docx,Priscila Martins Teixeira,3,,Priscila Martins Teixeira,3,True,3,3,2
+synth_filled,docx/071_curriculo_do_engenheiro_de_desenvolvimento_de_otvio_vieira_mendes.docx,Otávio Vieira Mendes,4,,Otávio Vieira Mendes,4,True,4,2,4
+synth_filled,docx/072_curriculo_do_gestor_de_desenvolvimento_de_neg_dbora_rodrigues_nascimento.docx,Débora Rodrigues Nascimento,3,,Débora Rodrigues Nascimento,3,True,3,1,3
+synth_filled,docx/073_curriculo_do_administrador_da_amazon_systems_letcia_mendes_carvalho.docx,Letícia Mendes Carvalho,3,,Letícia Mendes Carvalho,4,True,3,3,3
+synth_filled,docx/074_curriculo_de_gestor_de_programas_senior_helena_ferreira_martins.docx,Helena Ferreira Martins,4,,Helena Ferreira Martins,4,True,4,1,4
+synth_filled,docx/076_curriculo_de_marketing_e_gestor_de_marca_lucas_fernandes_cavalcante.docx,Lucas Fernandes Cavalcante,2,,Lucas Fernandes Cavalcante,2,True,2,1,2
+synth_filled,docx/077_curriculo_de_analista_de_negocios_junior_caio_moreira_macedo.docx,Caio Moreira Macedo,2,,Caio Moreira Macedo,3,True,2,0,0
+synth_filled,docx/078_pesquisa_externa_na_american_foundation_for_s_daniel_costa_nogueira.docx,Daniel Costa Nogueira,8,,Daniel Costa Nogueira,8,True,8,8,8
+synth_filled,docx/079_curriculo_americano_de_recursos_hidricos_patrcia_ribeiro_barbosa.docx,Patrícia Ribeiro Barbosa,2,,Patrícia Ribeiro Barbosa,3,True,2,1,1
+synth_filled,docx/081_curriculo_de_analista_de_negocios_renata_cardoso_rodrigues.docx,Renata Cardoso Rodrigues,2,,Renata Cardoso Rodrigues,2,True,2,1,1
+synth_filled,docx/082_curriculo_do_gestor_de_projecto_gabriel_almeida_souza.docx,Gabriel Almeida Souza,3,,Gabriel Almeida Souza,4,True,3,3,1
+synth_filled,docx/083_director_de_desenvolvimento_comercial_na_appl_thiago_barbosa_carvalho.docx,Thiago Barbosa Carvalho,3,,Thiago Barbosa Carvalho,5,True,3,3,3
+synth_filled,docx/084_curriculo_de_apoio_ao_cliente_apple_carolina_teixeira_martins.docx,Carolina Teixeira Martins,7,,Carolina Teixeira Martins,7,True,7,3,5
+synth_filled,docx/085_inquerito_tatiane_pereira_mendes.docx,Tatiane Pereira Mendes,2,,Tatiane Pereira Mendes,2,True,2,0,1
+synth_filled,docx/086_servico_de_apoio_ao_cliente_da_companhia_fina_letcia_nascimento_cardoso.docx,Letícia Nascimento Cardoso,3,,Letícia Nascimento Cardoso,3,True,3,3,3
+synth_filled,docx/087_curriculo_de_especialista_em_seguranca_de_inf_letcia_monteiro_almeida.docx,Letícia Monteiro Almeida,2,,Letícia Monteiro Almeida,2,True,2,1,2
+synth_filled,docx/089_diretor_de_marketing_na_tons_exemplo_de_curri_daniel_moreira_correia.docx,Daniel Moreira Correia,3,,Daniel Moreira Correia,2,True,2,0,0
+synth_filled,docx/091_administrador_de_licencas_na_arvato_cv_amostr_gabriel_moreira_cavalcante.docx,Gabriel Moreira Cavalcante,3,,Gabriel Moreira Cavalcante,4,True,3,1,3
+synth_filled,docx/098_curriculo_de_engenheiro_estrutural_vitria_costa_ribeiro.docx,Vitória Costa Ribeiro,1,,Vitória Costa Ribeiro,4,True,1,0,0
+synth_filled,docx/099_inquerito_juliana_nascimento_gomes.docx,Juliana Nascimento Gomes,5,,Juliana Nascimento Gomes,5,True,5,5,5
+synth_filled,docx/101_curriculo_do_assistente_de_ensino_de_licencia_sophia_monteiro_cavalcante.docx,Sophia Monteiro Cavalcante,4,,Sophia Monteiro Cavalcante,4,True,4,0,4
+synth_filled,docx/102_curriculo_de_estagiario_de_contabilidade_fina_pedro_pinto_carvalho.docx,Pedro Pinto Carvalho,6,,Pedro Pinto Carvalho,7,True,6,6,6
+synth_filled,docx/103_analista_de_marketing_senior_leonardo_lima_arajo.docx,Leonardo Lima Araújo,6,,Leonardo Lima Araújo,6,True,6,6,5
+synth_filled,docx/115_desenvolvedor_full_stack_na_bizconnect_events_maria_nogueira_lima.docx,Maria Nogueira Lima,3,,Maria Nogueira Lima,3,True,3,3,2
+synth_filled,docx/118_curriculo_do_assistente_executivo_do_grupo_bm_rafaela_almeida_ribeiro.docx,Rafaela Almeida Ribeiro,4,,Rafaela Almeida Ribeiro,4,True,4,4,4
+synth_filled,docx/130_inquerito_thiago_teixeira_monteiro.docx,Thiago Teixeira Monteiro,3,,Thiago Teixeira Monteiro,3,True,3,3,3
+synth_filled,docx/132_assistente_de_equilibrio_de_praia_na_uc_long_beatriz_fernandes_almeida.docx,Beatriz Fernandes Almeida,5,,Beatriz Fernandes Almeida,5,True,5,3,5
+synth_filled,docx/136_director_criativo_na_cassette_monkeys_exemplo_gabriela_almeida_arajo.docx,Gabriela Almeida Araújo,3,,Gabriela Almeida Araújo,3,True,3,2,3
+synth_filled,docx/26_dev_backend_lucas_vasconcelos.docx,Lucas Vasconcelos,3,,Lucas Vasconcelos,0,True,0,0,0
+synth_filled,docx/27_garcom_davi_lucas_da_mota.docx,Davi Lucas da Mota,3,,DAVI LUCAS DA MOTA,4,True,3,3,3
+synth_filled,docx/28_designer_grafico_camila_jesus.docx,Camila Jesus,3,,Camila Jesus,3,True,3,2,3
+synth_filled,docx/29_conferente_logistica_luan_vasconcelos.docx,Luan Vasconcelos,2,,Luan Vasconcelos,2,True,2,2,2
+synth_filled,docx/30_vendedor_loja_andre_monteiro_noaccent.docx,Andre Monteiro,2,,Andre Monteiro,2,True,2,2,2
+synth_filled,docx/31_garcom_luana_souza.docx,Luana Souza,2,,Luana Souza,2,True,2,2,2
+synth_filled,docx/32_recepcionista_hotel_ana_sophia_das_neves.docx,Ana Sophia das Neves,3,,Ana Sophia das Neves,3,True,3,3,3
+synth_filled,docx/33_operador_maquina_maria_isis_da_paz.docx,Maria Isis da Paz,2,,MARIA ISIS DA PAZ,3,True,2,2,2
+synth_filled,docx/34_repositor_maria_flor_cassiano.docx,Maria Flor Cassiano,2,,Maria Flor Cassiano,2,True,2,2,2
+synth_filled,docx/35_enfermeiro_uti_rafaela_freitas_multiemail.docx,Rafaela Freitas,3,,Rafaela Freitas,3,True,3,3,3
+synth_filled,docx/36_pedreiro_vitoria_lima.docx,Vitória Lima,3,,Vitória Lima,3,True,3,3,3
+synth_filled,docx/37_tec_mecanico_ana_clara_porto.docx,Ana Clara Porto,3,,Ana Clara Porto,3,True,3,3,3
+synth_filled,docx/38_analista_financeiro_lucas_da_mata.docx,Lucas da Mata,3,,Lucas da Mata,3,True,3,3,3
+synth_filled,docx/39_eletricista_pedro_lucas_andrade.docx,Pedro Lucas Andrade,3,,PEDRO LUCAS ANDRADE,4,True,3,3,3
+synth_filled,docx/40_devops_sra__aurora_rodrigues_upper.docx,SRA. AURORA RODRIGUES,3,,SRA. AURORA RODRIGUES,3,True,3,3,0
+synth_filled,docx/41_dev_backend_kevin_cavalcante.docx,Kevin Cavalcante,3,,Kevin Cavalcante,0,True,0,0,0
+synth_filled,docx/42_gerente_loja_luigi_pereira.docx,Luigi Pereira,3,,Luigi Pereira,3,True,3,3,3
+synth_filled,docx/43_enfermeiro_uti_thales_peixoto.docx,Thales Peixoto,3,,Thales Peixoto,3,True,3,3,3
+synth_filled,docx/44_tec_enfermagem_luan_pimenta.docx,Luan Pimenta,3,,Luan Pimenta,3,True,3,3,0
+synth_filled,docx/45_prof_fundamental_srta__maria_sophia_monten_noaccent.docx,Srta. Maria Sophia Montenegro,2,,SRTA. MARIA SOPHIA MONTENEGRO,4,True,2,2,2
+synth_filled,docx/46_farmaceutico_joao_vitor_aparecida.docx,João Vitor Aparecida,3,,João Vitor Aparecida,3,True,3,3,3
+synth_filled,docx/47_vendedor_loja_sabrina_cirino.docx,Sabrina Cirino,2,,Sabrina Cirino,2,True,2,2,2
+synth_filled,docx/48_assistente_contabil_jose_pedro_gomes.docx,José Pedro Gomes,3,,José Pedro Gomes,3,True,3,3,3
+synth_filled,docx/49_analista_financeiro_daniel_araujo.docx,Daniel Araújo,2,,Daniel Araújo,2,True,2,2,2
+synth_filled,docx/50_motorista_d_davi_luiz_vargas_multiemail.docx,Davi Luiz Vargas,3,,Davi Luiz Vargas,3,True,3,3,3
+synth_filled,pdf/01_operador_maquina_lais_pires_formal_classic.pdf,Laís Pires,2,,Laís Pires,2,True,2,2,2
+synth_filled,pdf/02_diretor_comercial_sra__hadassa_rezende_tabular_concurso.pdf,Sra. Hadassa Rezende,3,,Sra. Hadassa Rezende,3,True,3,3,3
+synth_filled,pdf/03_motorista_d_leticia_porto_lattes_academic.pdf,Letícia Porto,2,,ORIENTAÇÕES PARA O PREENCHIMENTO,3,False,2,1,2
+synth_filled,pdf/047_gestor_de_propriedade_mariana_oliveira_monteiro.pdf,Mariana Oliveira Monteiro,3,,Mariana Oliveira Monteiro,4,True,3,0,0
+synth_filled,pdf/049_curriculo_de_estagiarios_de_recursos_humanos_rafael_monteiro_freitas.pdf,Rafael Monteiro Freitas,1,,Rafael Monteiro Freitas,2,True,1,1,1
+synth_filled,pdf/04_data_scientist_henry_gabriel_azevedo_sidebar_colored.pdf,Henry Gabriel Azevedo,2,,nry Gabriel Azevedo,2,True,2,2,2
+synth_filled,pdf/050_cv_de_janaporubska_gmail_com_igor_pereira_costa.pdf,Igor Pereira Costa,2,,Igor Pereira Costa,9,True,2,1,2
+synth_filled,pdf/052_curriculo_da_pesquisa_igor_rodrigues_gomes.pdf,Igor Rodrigues Gomes,3,,Igor Rodrigues Gomes,3,True,3,3,3
+synth_filled,pdf/053_representante_de_vendas_na_adidas_amostra_de_enzo_correia_moreira.pdf,Enzo Correia Moreira,2,,Enzo Correia Moreira,2,True,2,2,1
+synth_filled,pdf/054_adidas_sales_representative_resume_template_vincius_ribeiro_nascimento.pdf,Vinícius Ribeiro Nascimento,3,,Vinícius Ribeiro Nascimento,5,True,3,0,1
+synth_filled,pdf/055_gerente_de_vendas_de_localizacao_na_advantage_igor_ferreira_ribeiro.pdf,Igor Ferreira Ribeiro,3,,Igor Ferreira Ribeiro,3,True,3,3,3
+synth_filled,pdf/056_curriculo_do_aequs_assistant_manager_rodrigo_pereira_ribeiro.pdf,Rodrigo Pereira Ribeiro,3,,Rodrigo Pereira R,3,True,3,1,3
+synth_filled,pdf/057_curriculo_do_engenheiro_de_design_aeromobil_beatriz_freitas_mendes.pdf,Beatriz Freitas Mendes,3,,Eng. Beatriz Freitas Mendes MEc,4,True,3,3,0
+synth_filled,pdf/058_estagiario_de_engenharia_de_software_na_agile_igor_martins_carvalho.pdf,Igor Martins Carvalho,2,,Igor Martins Carvalho,3,True,2,1,2
+synth_filled,pdf/059_curriculo_da_air_france_leonardo_macedo_moreira.pdf,Leonardo Macedo Moreira,2,,Leonardo Macedo Moreira,2,True,2,2,0
+synth_filled,pdf/05_designer_grafico_vitor_gabriel_machado_noaccent_simplified_form.pdf,Vitor Gabriel Machado,3,,Vitor Gabriel Machado,2,True,2,2,3
+synth_filled,pdf/060_air_france_team_manager_retomar_amostra_de_cu_eduardo_martins_costa.pdf,Eduardo Martins Costa,3,,Eduardo Martins Costa,3,True,3,1,3
+synth_filled,pdf/062_curriculo_de_desenvolvedor_movel_isabela_ribeiro_costa.pdf,Isabela Ribeiro Costa,3,,Isabela Ribeiro Costa,4,True,3,2,2
+synth_filled,pdf/064_engenheiro_de_software_amostra_de_curriculo_c_joo_fernandes_ferreira.pdf,João Fernandes Ferreira,3,,João Fernandes Ferreira,2,True,2,1,1
+synth_filled,pdf/065_engenheiro_de_produto_na_alten_resume_amostra_priscila_moreira_gomes.pdf,Priscila Moreira Gomes,4,,MOREIRA GOMES,4,True,4,3,3
+synth_filled,pdf/066_curriculo_de_analista_de_dados_na_amazon_joo_macedo_pereira.pdf,João Macedo Pereira,3,,João Macedo Pereira,2,True,2,2,2
+synth_filled,pdf/067_curriculo_de_analista_de_negocios_na_amazon_ana_teixeira_gomes.pdf,Ana Teixeira Gomes,3,,Plural Sight,3,False,3,2,2
+synth_filled,pdf/068_engenheiro_de_desenvolvimento_de_software_na_priscila_martins_teixeira.pdf,Priscila Martins Teixeira,3,,Priscila Martins Teixeira,3,True,3,3,2
+synth_filled,pdf/06_diretor_comercial_bernardo_rocha_sidebar_right.pdf,Bernardo Rocha,2,,Bernardo Rocha,2,True,2,2,2
+synth_filled,pdf/071_curriculo_do_engenheiro_de_desenvolvimento_de_otvio_vieira_mendes.pdf,Otávio Vieira Mendes,4,,Otávio Vieira Mendes,4,True,4,0,3
+synth_filled,pdf/072_curriculo_do_gestor_de_desenvolvimento_de_neg_dbora_rodrigues_nascimento.pdf,Débora Rodrigues Nascimento,3,,Débora Rodrigues,3,True,3,0,3
+synth_filled,pdf/073_curriculo_do_administrador_da_amazon_systems_letcia_mendes_carvalho.pdf,Letícia Mendes Carvalho,3,,Letícia Mendes,3,True,3,3,3
+synth_filled,pdf/074_curriculo_de_gestor_de_programas_senior_helena_ferreira_martins.pdf,Helena Ferreira Martins,4,,Helena Ferreira Martins,4,True,4,4,3
+synth_filled,pdf/076_curriculo_de_marketing_e_gestor_de_marca_lucas_fernandes_cavalcante.pdf,Lucas Fernandes Cavalcante,2,,Lucas Fernandes Cavalcante,2,True,2,1,2
+synth_filled,pdf/077_curriculo_de_analista_de_negocios_junior_caio_moreira_macedo.pdf,Caio Moreira Macedo,2,,Caio Moreira Macedo,3,True,2,0,2
+synth_filled,pdf/078_pesquisa_externa_na_american_foundation_for_s_daniel_costa_nogueira.pdf,Daniel Costa Nogueira,8,,Daniel Costa Nogueira,8,True,8,8,8
+synth_filled,pdf/079_curriculo_americano_de_recursos_hidricos_patrcia_ribeiro_barbosa.pdf,Patrícia Ribeiro Barbosa,2,,Patrícia Ribeiro B,3,True,2,2,2
+synth_filled,pdf/07_prof_fundamental_leticia_ribeiro_two_column_split.pdf,Letícia Ribeiro,2,,Licenciatura em Letras,2,False,2,2,2
+synth_filled,pdf/081_curriculo_de_analista_de_negocios_renata_cardoso_rodrigues.pdf,Renata Cardoso Rodrigues,2,,Renata Cardoso Rodrigues,5,True,2,1,1
+synth_filled,pdf/082_curriculo_do_gestor_de_projecto_gabriel_almeida_souza.pdf,Gabriel Almeida Souza,3,,SEDADILIBAH GESTÃODEPROJETOS,5,False,3,2,1
+synth_filled,pdf/083_director_de_desenvolvimento_comercial_na_appl_thiago_barbosa_carvalho.pdf,Thiago Barbosa Carvalho,3,,Thiago Barbosa Carvalho,5,True,3,2,3
+synth_filled,pdf/084_curriculo_de_apoio_ao_cliente_apple_carolina_teixeira_martins.pdf,Carolina Teixeira Martins,7,,Carolina Teixeira Martins,7,True,7,7,6
+synth_filled,pdf/085_inquerito_tatiane_pereira_mendes.pdf,Tatiane Pereira Mendes,2,,Tatiane Pereira Mendes,2,True,2,0,1
+synth_filled,pdf/086_servico_de_apoio_ao_cliente_da_companhia_fina_letcia_nascimento_cardoso.pdf,Letícia Nascimento Cardoso,3,,Letícia Nascimento Cardoso,3,True,3,3,2
+synth_filled,pdf/087_curriculo_de_especialista_em_seguranca_de_inf_letcia_monteiro_almeida.pdf,Letícia Monteiro Almeida,2,,Letícia Monteiro Almeida,2,True,2,0,2
+synth_filled,pdf/089_diretor_de_marketing_na_tons_exemplo_de_curri_daniel_moreira_correia.pdf,Daniel Moreira Correia,3,,Daniel Moreira Correia,2,True,2,2,1
+synth_filled,pdf/08_medico_pediatra_asafe_das_neves_timeline_dates.pdf,Asafe das Neves,2,,Asafe das Neves,0,True,0,0,0
+synth_filled,pdf/091_administrador_de_licencas_na_arvato_cv_amostr_gabriel_moreira_cavalcante.pdf,Gabriel Moreira Cavalcante,3,,Gabriel Moreira Cavalcante,4,True,3,2,3
+synth_filled,pdf/098_curriculo_de_engenheiro_estrutural_vitria_costa_ribeiro.pdf,Vitória Costa Ribeiro,1,,Vitória Costa Ribeiro,1,True,1,0,0
+synth_filled,pdf/099_inquerito_juliana_nascimento_gomes.pdf,Juliana Nascimento Gomes,5,,Juliana Nascimento Gomes,5,True,5,3,4
+synth_filled,pdf/09_dev_mobile_zoe_farias_boxed_header.pdf,Zoe Farias,3,,Zoe Farias,2,True,2,1,3
+synth_filled,pdf/101_curriculo_do_assistente_de_ensino_de_licencia_sophia_monteiro_cavalcante.pdf,Sophia Monteiro Cavalcante,4,,Sophia Monteiro Cavalcante,4,True,4,0,0
+synth_filled,pdf/102_curriculo_de_estagiario_de_contabilidade_fina_pedro_pinto_carvalho.pdf,Pedro Pinto Carvalho,6,,Pedro Pinto Carvalho,7,True,6,6,3
+synth_filled,pdf/103_analista_de_marketing_senior_leonardo_lima_arajo.pdf,Leonardo Lima Araújo,6,,Leonardo Lima Araújo,6,True,6,4,3
+synth_filled,pdf/107_curriculo_do_bbva_compass_banker_gabriel_arajo_pinto.pdf,Gabriel Araújo Pinto,4,,Gabriel Araújo,2,True,2,2,2
+synth_filled,pdf/109_curriculo_de_executivo_de_vendas_na_bell_comm_rafaela_lima_arajo.pdf,Rafaela Lima Araújo,3,,RL Rafaela Lima Araújo,3,True,3,0,3
+synth_filled,pdf/10_atendente_caixa_gustavo_henrique_lopes_multiemail_compact_dense.pdf,Gustavo Henrique Lopes,2,,Gustavo Henrique Lopes,2,True,2,2,2
+synth_filled,pdf/113_curriculo_de_programador_de_software_na_binar_sophia_silva_ribeiro.pdf,Sophia Silva Ribeiro,2,,Sophia Silva Ribeiro,0,True,0,0,0
+synth_filled,pdf/115_desenvolvedor_full_stack_na_bizconnect_events_maria_nogueira_lima.pdf,Maria Nogueira Lima,3,,Maria Nogueira Lima,3,True,3,3,1
+synth_filled,pdf/117_curriculo_de_gestor_de_produto_principal_na_b_lucas_souza_gomes.pdf,Lucas Souza Gomes,4,,Lucas Souza Gomes,4,True,4,3,2
+synth_filled,pdf/118_curriculo_do_assistente_executivo_do_grupo_bm_rafaela_almeida_ribeiro.pdf,Rafaela Almeida Ribeiro,4,,a Almeida Ribeiro,4,True,4,3,4
+synth_filled,pdf/11_repositor_ana_julia_novais_formal_classic.pdf,Ana Julia Novais,3,,Ana Julia Novais,0,True,0,0,0
+synth_filled,pdf/127_associado_de_marketing_de_conteudos_felipe_barbosa_barbosa.pdf,Felipe Barbosa Barbosa,3,,Felipe Barbosa Barbosa,2,True,2,1,2
+synth_filled,pdf/128_curriculo_de_estagiario_de_administracao_de_e_gustavo_arajo_rodrigues.pdf,Gustavo Araújo Rodrigues,2,,Gustavo Araújo Rodrigues,2,True,2,0,2
+synth_filled,pdf/129_generalista_de_rh_na_business_porters_amostra_murilo_ribeiro_pereira.pdf,Murilo Ribeiro Pereira,2,,Murilo Ribeiro Pereira MBA,2,True,2,2,1
+synth_filled,pdf/12_pedreiro_luisa_nogueira_tabular_concurso.pdf,Luísa Nogueira,3,,Luísa Nogueira,3,True,3,3,3
+synth_filled,pdf/130_inquerito_thiago_teixeira_monteiro.pdf,Thiago Teixeira Monteiro,3,,Thiago Teixeira Monteiro,3,True,3,3,3
+synth_filled,pdf/132_assistente_de_equilibrio_de_praia_na_uc_long_beatriz_fernandes_almeida.pdf,Beatriz Fernandes Almeida,5,,Beatriz Fernandes Almeida,5,True,5,3,4
+synth_filled,pdf/136_director_criativo_na_cassette_monkeys_exemplo_gabriela_almeida_arajo.pdf,Gabriela Almeida Araújo,3,,Almei da Araújo,2,False,2,1,1
+synth_filled,pdf/13_devops_mateus_duarte_lattes_academic.pdf,Mateus Duarte,3,,ORIENTAÇÕES PARA O PREENCHIMENTO,4,False,3,3,0
+synth_filled,pdf/14_gerente_projetos_kevin_rodrigues_sidebar_colored.pdf,Kevin Rodrigues,3,,Kevin Rodrigues,3,True,3,3,3
+synth_filled,pdf/15_farmaceutico_joao_guilherme_novais_upper_simplified_form.pdf,JOÃO GUILHERME NOVAIS,2,,JOÃO GUILHERME NOVAIS,1,True,1,1,2
+synth_filled,pdf/16_data_scientist_vinicius_peixoto_sidebar_right.pdf,Vinicius Peixoto,3,,Vinicius Peixoto,3,True,3,3,3
+synth_filled,pdf/17_redator_publi_milena_macedo_two_column_split.pdf,Milena Macedo,2,,Milena M,1,True,1,1,0
+synth_filled,pdf/18_conferente_logistica_joao_pedro_macedo_timeline_dates.pdf,João Pedro Macedo,3,,João Pedro Macedo,0,True,0,0,0
+synth_filled,pdf/19_medico_pediatra_sra__laura_ribeiro_boxed_header.pdf,Sra. Laura Ribeiro,2,,Médico Pediatra,2,False,2,1,2
+synth_filled,pdf/20_recepcionista_hotel_rafaela_melo_noaccent_compact_dense.pdf,Rafaela Melo,3,,Rafaela Melo,3,True,3,3,3
+synth_filled,pdf/21_gerente_loja_beatriz_moura_formal_classic.pdf,Beatriz Moura,2,,Beatriz Moura,1,True,1,0,0
+synth_filled,pdf/22_atendente_caixa_maria_sophia_nunes_tabular_concurso.pdf,Maria Sophia Nunes,3,,Maria Sophia Nunes,3,True,3,3,3
+synth_filled,pdf/23_gerente_projetos_miguel_da_mota_lattes_academic.pdf,Miguel da Mota,2,,ORIENTAÇÕES PARA O PREENCHIMENTO,3,False,2,1,2
+synth_filled,pdf/24_assistente_contabil_ravi_lucca_barbosa_sidebar_colored.pdf,Ravi Lucca Barbosa,3,,Ravi Lucca Barbosa,3,True,3,3,3
+synth_filled,pdf/25_eletricista_mirella_freitas_multiemail_simplified_form.pdf,Mirella Freitas,2,,Mirella Freitas,0,True,0,0,0
+synth_filled,pdf/26_logistica_helena_pereira_minimal_classic.pdf,Helena Pereira,1,,Helena Pereira,1,True,1,1,1
+synth_filled,pdf/27_jovem_aprendiz_felipe_soares_dark_header_round.pdf,Felipe Soares,0,,FELIPE SOARES,0,True,0,0,0
+synth_filled,pdf/28_dentista_julia_harris_gray_sidebar_timeline.pdf,Julia Harris,2,,JULIA HARRIS,2,True,2,2,0
+synth_filled,pdf/29_diretor_contabilidade_lorenzo_fernandes_banner_orange_accent.pdf,Lorenzo Fernandes,3,,LORENZO F,3,True,3,3,2
+synth_filled,pdf/30_product_manager_javiera_blanch_navy_sidebar.pdf,Javiera Blanch,2,,JAVIERA BLANCH,2,True,2,1,0
+synth_filled,pdf/31_advogada_emilia_carvalho_skillbars_simple.pdf,Emília Guimarães Carvalho,4,,Emília Guimarães Carvalho,4,True,4,0,0
+synth_filled,pdf/32_professora_ana_beatriz_silva_red_right_sidebar.pdf,ANA BEATRIZ SILVA,3,,ANA BEATRIZ SILVA,3,True,3,2,3
+synth_filled,pdf/33_designer_grafico_bianca_pinto_hexagon_sidebar.pdf,Bianca Pinto,3,,BIANCA PINTO,3,True,3,3,3
+synth_filled,pdf/34_historiador_tiago_almeida_olive_sidebar.pdf,Tiago Ribeiro Almeida,3,,"Arquivo Público do Estado São Paulo, SP",3,False,3,3,3
+synth_filled,pdf/35_aux_administrativa_eduarda_dias_pink_banner_badge.pdf,Eduarda Rocha Dias,2,,E D,2,False,2,2,1
+synth_filled,pdf/36_aux_administrativa_eduarda_dias_cyan_sidebar_icons.pdf,Eduarda Rocha Dias,2,,Eduarda Rocha Dias,3,True,2,0,2
+synth_filled,pdf/37_administrador_erick_barbosa_olive_sidebar_dark.pdf,Erick Barbosa Neto,3,,"Fortaleza, CE",3,False,3,2,3
+synth_filled,pdf/38_engenheiro_civil_alexandre_timoteo_diamond_two_column.pdf,Alexandre Timóteo,2,,Alexandre ENGENHE,1,False,1,2,0
+synth_filled,pdf/39_gestora_trafego_beatriz_mendes_orange_accent_photo.pdf,Beatriz Mendes,1,,Beatriz Mendes,0,True,0,0,0
+synth_filled,pdf/40_dev_fullstack_joao_mendes_navy_right_sidebar.pdf,João Mendes,3,,JOÃO MENDES,3,True,3,3,3
+synth_filled,pdf/41_estudante_henrique_furtado_yellow_header_skillbars.pdf,Henrique Furtado,1,,HENRIQUE Estudante,1,False,1,0,1
+synth_filled,pdf/42_gestora_midia_social_bianca_almeida_teal_header_monogram.pdf,Bianca Correia Almeida,2,,BIANCA CORREIA ALMEIDA BA,0,True,0,0,0
+synth_filled,pdf/43_produtora_conteudo_clarice_moraes_serif_elegant_photo.pdf,Clarice Moraes,3,,PRODUTORADECONTEÚDO CLARICE MORAES,3,True,3,0,1
+synth_filled,pdf/44_veterinaria_sara_jane_green_header_skillbars.pdf,Sara Jane,2,,Sara Jane,2,True,2,0,2
+synth_filled,pdf/45_dev_python_eduardo_moreira_orange_accent_single_column.pdf,Eduardo Moreira,3,,EDUARDO MOREIRA,3,True,3,3,1
+synth_filled,pdf/46_vendedora_moda_sara_pires_red_sidebar_dots.pdf,Sara Pires,2,,Sara Pires,0,True,0,0,0
+synth_filled_v2,pdf/01_atendente_de_telemar_henrique_gomes_rodrigu_f00.pdf,Henrique Gomes Rodrigues,3,,Henrique Gomes Rodrigues,3,True,3,2,3
+synth_filled_v2,pdf/02_consultor_de_vendas_mariana_cardoso_rodrig_f01.pdf,Mariana Cardoso Rodrigues,1,,Mariana Cardoso Rodrigu,1,True,1,1,1
+synth_filled_v2,pdf/03_atendente_de_caixa_thiago_lima_santos_f02.pdf,Thiago Lima Santos,2,,Thiago Lima Santos,2,True,2,1,2
+synth_filled_v2,pdf/04_balconista_de_farmac_isabela_pinto_carvalho_f03.pdf,Isabela Pinto Carvalho,1,,Pinto Carvalho,1,True,1,1,1
+synth_filled_v2,pdf/05_assistente_administr_vinicius_nogueira_pint_noaccent_f04.pdf,Vinicius Nogueira Pinto,1,,Nogueira Pinto,1,True,1,1,1
+synth_filled_v2,pdf/06_balconista_de_farmac_bruna_nascimento_gomes_f05.pdf,Bruna Nascimento Gomes,1,,Bruna Nascimento Gomes,1,True,1,1,1
+synth_filled_v2,pdf/07_vendedora_mariana_ferreira_marti_f06.pdf,Mariana Ferreira Martins,3,,Mariana Ferreira Martins,3,True,3,3,3
+synth_filled_v2,pdf/08_repositor_de_mercado_fernanda_teixeira_teix_f07.pdf,Fernanda Teixeira Teixeira,2,,Fernanda Teixeira,2,True,2,0,2
+synth_filled_v2,pdf/09_consultor_de_vendas_bruno_mendes_santos_f08.pdf,Bruno Mendes Santos,1,,Bruno Mendes S,1,True,1,1,1
+synth_filled_v2,pdf/10_repositor_de_mercado_isabela_gomes_rodrigue_multiemail_f09.pdf,Isabela Gomes Rodrigues,1,,Isabela Gomes Rodrigues,1,True,1,1,0
+synth_filled_v2,pdf/11_auxiliar_de_servicos_juliana_ferreira_carva_f10.pdf,Juliana Ferreira Carvalho,1,,Juliana Ferreira Carvalho,1,True,1,1,0
+synth_filled_v2,pdf/12_atendente_de_farmaci_patricia_mendes_cardos_f11.pdf,Patrícia Mendes Cardoso,3,,Patrícia Mendes Cardoso,3,True,3,2,3
+synth_filled_v2,pdf/13_assistente_administr_fernanda_costa_gomes_p00.pdf,Fernanda Costa Gomes,3,,Fernanda Costa Gomes,3,True,3,3,3
+synth_filled_v2,pdf/14_repositor_de_mercado_igor_souza_correia_p01.pdf,Igor Souza Correia,3,,Igor Souza Correia,3,True,3,2,3
+synth_filled_v2,pdf/15_recepcionista_de_cli_mateus_moreira_silva_upper_p02.pdf,MATEUS MOREIRA SILVA,1,,MATEUS MOREIRA SILVA,1,True,1,1,1
+synth_filled_v2,pdf/16_assistente_administr_tatiane_oliveira_nasci_f00.pdf,Tatiane Oliveira Nascimento,2,,Tatiane Oliveira Nascimento,2,True,2,2,2
+synth_filled_v2,pdf/17_conferente_fernanda_araujo_araujo_f01.pdf,Fernanda Araújo Araújo,3,,Fernanda Araújo Araújo,3,True,3,1,3
+synth_filled_v2,pdf/18_vendedor_gabriel_carvalho_ferna_f02.pdf,Gabriel Carvalho Fernandes,1,,Gabriel Carvalho,2,True,1,0,1
+synth_filled_v2,pdf/19_assistente_administr_camila_fernandes_nasci_f03.pdf,Camila Fernandes Nascimento,2,,Camila Fernandes Nascimento,2,True,2,2,2
+synth_filled_v2,pdf/20_repositor_de_mercado_gustavo_souza_lima_noaccent_f04.pdf,Gustavo Souza Lima,1,,Souza Lima,1,True,1,0,1
+synth_filled_v2,pdf/21_vendedor_otavio_freitas_santos_f05.pdf,Otávio Freitas Santos,1,,Otávio Freitas Santos,1,True,1,1,1
+synth_filled_v2,pdf/22_acougueiro_rafael_macedo_nogueira_f06.pdf,Rafael Macedo Nogueira,2,,Rafael Macedo Nogueira,2,True,2,1,2
+synth_filled_v2,pdf/23_acougueiro_helena_almeida_nascime_f07.pdf,Helena Almeida Nascimento,3,,Helena Almeida Nascimen,3,True,3,2,3
+synth_filled_v2,pdf/24_desenvolvedor_backen_daniel_ribeiro_monteir_f08.pdf,Daniel Ribeiro Monteiro,2,,Daniel Ribeiro Mo,2,True,2,2,0
+synth_filled_v2,pdf/25_conferente_debora_moreira_barbosa_multiemail_f09.pdf,Débora Moreira Barbosa,2,,Débora Moreira Barbosa,2,True,2,1,2
+synth_filled_v2,pdf/26_tecnico_de_enfermage_renata_silva_ferreira_f10.pdf,Renata Silva Ferreira,2,,Renata Silva Ferreira,2,True,2,2,0
+synth_filled_v2,pdf/27_engenheiro_de_softwa_maria_fernandes_gomes_f11.pdf,Maria Fernandes Gomes,2,,Maria Fernandes Gomes,2,True,2,2,2
+synth_filled_v2,pdf/28_recepcionista_de_cli_vitoria_mendes_monteir_p00.pdf,Vitória Mendes Monteiro,2,,Vitória Mendes Monteiro,2,True,2,1,2
+synth_filled_v2,pdf/29_recepcionista_leonardo_costa_monteir_p01.pdf,Leonardo Costa Monteiro,1,,Leonardo Costa Monteiro,1,True,1,1,1
+synth_filled_v2,pdf/30_motorista_entregador_rafael_nogueira_costa_upper_p02.pdf,RAFAEL NOGUEIRA COSTA,2,,RAFAEL NOGUEIRA COSTA,2,True,2,2,2
+synth_filled_v2,pdf/31_atendente_de_call_ce_gustavo_mendes_vieira_f00.pdf,Gustavo Mendes Vieira,3,,Gustavo Mendes Vieira,3,True,3,1,3
+synth_filled_v2,pdf/32_repositor(a)_de_loja_mateus_carvalho_cavalc_f01.pdf,Mateus Carvalho Cavalcante,2,,Mateus Carvalho Cavalcan,2,True,2,2,0
+synth_filled_v2,pdf/33_consultor_de_vendas_tatiane_cavalcante_fer_f02.pdf,Tatiane Cavalcante Ferreira,2,,Tatiane Cavalcante,2,True,2,2,2
+synth_filled_v2,pdf/34_enfermeiro_juliana_barbosa_souza_f03.pdf,Juliana Barbosa Souza,1,,Barbosa Souza,1,True,1,1,1
+synth_filled_v2,pdf/35_tecnico_de_enfermage_mariana_gomes_moreira_noaccent_f04.pdf,Mariana Gomes Moreira,1,,Gomes Moreira,1,True,1,1,0
+synth_filled_v2,pdf/36_enfermeiro_vinicius_oliveira_fern_f05.pdf,Vinícius Oliveira Fernandes,3,,Vinícius Oliveira Fernande,3,True,3,3,3
+synth_filled_v2,pdf/37_auxiliar_de_acougue_gabriel_macedo_souza_f06.pdf,Gabriel Macedo Souza,3,,Gabriel Macedo Souza,3,True,3,1,3
+synth_filled_v2,pdf/38_repositor(a)_de_loja_davi_nascimento_nascim_f07.pdf,Davi Nascimento Nascimento,1,,Davi Nascimento Nascime,1,True,1,0,0
+synth_filled_v2,pdf/39_auxiliar_administrat_patricia_nogueira_cost_f08.pdf,Patrícia Nogueira Costa,1,,Patrícia Nogueira Costa,2,True,1,1,1
+synth_filled_v2,pdf/40_assistente_administr_larissa_silva_gomes_multiemail_f09.pdf,Larissa Silva Gomes,3,,Larissa Silva Gomes,3,True,3,2,3
+synth_filled_v2,pdf/41_repositor(a)_de_loja_renata_fernandes_ribei_f10.pdf,Renata Fernandes Ribeiro,2,,Renata Fernandes Ribeiro,2,True,2,1,0
+synth_filled_v2,pdf/42_motorista_de_entrega_maria_santos_correia_f11.pdf,Maria Santos Correia,1,,Maria Santos Correia,1,True,1,1,0
+synth_filled_v2,pdf/43_auxiliar_de_acougue_isabela_pinto_mendes_p00.pdf,Isabela Pinto Mendes,2,,Isabela Pinto Mendes,2,True,2,2,2
+synth_filled_v2,pdf/44_auxiliar_de_servicos_aline_carvalho_teixeir_p01.pdf,Aline Carvalho Teixeira,1,,Aline Carvalho Teixeira,1,True,1,1,1
+synth_filled_v2,pdf/45_tecnico_de_enfermage_murilo_pereira_pinto_upper_p02.pdf,MURILO PEREIRA PINTO,3,,MURILO PEREIRA PINTO,3,True,3,2,3
+synth_filled_v2,pdf/46_conferente_gabriel_carvalho_santo_f00.pdf,Gabriel Carvalho Santos,3,,Gabriel Carvalho Santos,3,True,3,2,3
+synth_filled_v2,pdf/47_cozinheira_patricia_oliveira_mart_f01.pdf,Patrícia Oliveira Martins,3,,Patrícia Oliveira Martins,3,True,3,2,3
+synth_filled_v2,pdf/48_consultor_de_vendas_gustavo_pereira_olivei_f02.pdf,Gustavo Pereira Oliveira,3,,Gustavo Pereira,3,True,3,2,3
+synth_filled_v2,pdf/49_operador_de_caixa_mariana_moreira_ribeir_f03.pdf,Mariana Moreira Ribeiro,1,,Moreira Ribeiro,1,True,1,1,1
+synth_filled_v2,pdf/50_tecnico_de_enfermage_priscila_ferreira_oliv_noaccent_f04.pdf,Priscila Ferreira Oliveira,2,,Ferreira Oliveira,2,True,2,1,0
+synth_filled_v2,pdf/51_operador_de_caixa_marcelo_ribeiro_silva_f05.pdf,Marcelo Ribeiro Silva,3,,Marcelo Ribeiro Silva,3,True,3,1,3
+synth_filled_v2,pdf/52_auxiliar_de_limpeza_andre_oliveira_martins_f06.pdf,André Oliveira Martins,3,,André Oliveira Martins,3,True,3,1,3
+synth_filled_v2,pdf/53_auxiliar_de_acougue_isabela_moreira_martin_f07.pdf,Isabela Moreira Martins,2,,Isabela Moreira Ma,2,True,2,1,2
+synth_filled_v2,pdf/54_balconista_de_farmac_camila_rodrigues_mende_f08.pdf,Camila Rodrigues Mendes,3,,Camila Rodrigues,3,True,3,2,3
+synth_filled_v2,pdf/55_repositor_de_mercado_carolina_freitas_nasci_multiemail_f09.pdf,Carolina Freitas Nascimento,3,,Carolina Freitas Nascimento,3,True,3,1,3
+synth_filled_v2,pdf/56_atendente_de_caixa_renata_araujo_moreira_f10.pdf,Renata Araújo Moreira,3,,Renata Araújo Moreira,3,True,3,2,3
+synth_filled_v2,pdf/57_vendedora_patricia_almeida_pinto_f11.pdf,Patrícia Almeida Pinto,1,,Patrícia Almeida Pinto,1,True,1,1,0
+synth_filled_v2,pdf/58_recepcionista_otavio_correia_mendes_p00.pdf,Otávio Correia Mendes,3,,Otávio Correia Mendes,3,True,3,2,3
+synth_filled_v2,pdf/59_assistente_de_rh_vitoria_freitas_gomes_p01.pdf,Vitória Freitas Gomes,2,,Vitória Freitas Gomes,2,True,2,1,2
+synth_filled_v2,pdf/60_operadora_de_caixa_felipe_martins_freitas_upper_p02.pdf,FELIPE MARTINS FREITAS,1,,FELIPE MARTINS FREITAS,1,True,1,1,1
+synth_filled_v2,pdf/61_auxiliar_de_servicos_davi_freitas_freitas_f00.pdf,Davi Freitas Freitas,2,,Davi Freitas Freitas,2,True,2,2,2
+synth_filled_v2,pdf/62_auxiliar_administrat_helena_pinto_vieira_f01.pdf,Helena Pinto Vieira,3,,Helena Pinto Vieira,3,True,3,3,3
+synth_filled_v2,pdf/63_auxiliar_de_acougue_bernardo_cardoso_mende_f02.pdf,Bernardo Cardoso Mendes,2,,Bernardo Cardoso,2,True,2,2,2
+synth_filled_v2,pdf/64_motorista_entregador_bruno_ferreira_rodrigu_f03.pdf,Bruno Ferreira Rodrigues,2,,Ferreira Rodrigues,2,True,2,0,2
+synth_filled_v2,pdf/65_auxiliar_de_servicos_maria_monteiro_ferreir_noaccent_f04.pdf,Maria Monteiro Ferreira,1,,Monteiro Ferreira,1,True,1,1,1
+synth_filled_v2,pdf/66_atendente_de_caixa_murilo_mendes_cardoso_f05.pdf,Murilo Mendes Cardoso,2,,Murilo Mendes Cardoso,2,True,2,2,2
+synth_filled_v2,pdf/67_estoquista_otavio_cardoso_ribeiro_f06.pdf,Otávio Cardoso Ribeiro,3,,Otávio Cardoso Ribeiro,3,True,3,2,3
+synth_filled_v2,pdf/68_atendente_de_recepca_marcelo_gomes_almeida_f07.pdf,Marcelo Gomes Almeida,3,,Marcelo Gomes Almeida,3,True,3,2,3
+synth_filled_v2,pdf/69_repositor_de_mercado_bernardo_ferreira_barb_f08.pdf,Bernardo Ferreira Barbosa,2,,Bernardo Ferreira B,2,True,2,0,2
+synth_filled_v2,pdf/70_atendente_de_farmaci_thiago_teixeira_silva_multiemail_f09.pdf,Thiago Teixeira Silva,2,,Thiago Teixeira Silva,2,True,2,0,2
+synth_filled_v2,pdf/71_tecnica_em_enfermage_fernanda_fernandes_car_f10.pdf,Fernanda Fernandes Cardoso,2,,Fernanda Fernandes,2,True,2,2,0
+synth_filled_v2,pdf/72_repositor_de_mercado_camila_gomes_nasciment_f11.pdf,Camila Gomes Nascimento,3,,Camila Gomes Nascimento,3,True,3,2,3
+synth_filled_v2,pdf/73_atendente_de_caixa_sophia_pereira_nascime_p00.pdf,Sophia Pereira Nascimento,1,,Sophia Pereira Nascimento,1,True,1,1,1
+synth_filled_v2,pdf/74_estoquista_andre_cardoso_martins_p01.pdf,André Cardoso Martins,3,,André Cardoso Martins,3,True,3,2,3
+synth_filled_v2,pdf/75_atendente_de_call_ce_renata_moreira_cardoso_upper_p02.pdf,RENATA MOREIRA CARDOSO,3,,RENATA MOREIRA CARDOSO,3,True,3,3,3
+synth_filled_v2,pdf/76_recepcionista_maria_martins_vieira_f00.pdf,Maria Martins Vieira,3,,Maria Martins Vieira,3,True,3,2,3
+synth_filled_v2,pdf/77_motorista_entregador_mariana_costa_correia_f01.pdf,Mariana Costa Correia,2,,Mariana Costa Correia,2,True,2,1,2
+synth_filled_v2,pdf/78_acougueiro_priscila_cavalcante_ro_f02.pdf,Priscila Cavalcante Rodrigues,3,,Priscila Cavalcante,3,True,3,3,3
+synth_filled_v2,pdf/79_motorista_entregador_henrique_macedo_barbos_f03.pdf,Henrique Macedo Barbosa,2,,Macedo Barbosa,2,True,2,2,2
+synth_filled_v2,pdf/80_tecnica_em_enfermage_priscila_nogueira_pint_noaccent_f04.pdf,Priscila Nogueira Pinto,3,,Nogueira Pinto,3,True,3,2,0
+synth_filled_v2,pdf/81_auxiliar_financeiro_beatriz_oliveira_perei_f05.pdf,Beatriz Oliveira Pereira,3,,Beatriz Oliveira Pere,3,True,3,2,3
+synth_filled_v2,pdf/82_operadora_de_caixa_enzo_pereira_carvalho_f06.pdf,Enzo Pereira Carvalho,1,,Enzo Pereira Carvalho,1,True,1,1,1
+synth_filled_v2,pdf/83_atendente_de_caixa_juliana_vieira_ribeiro_f07.pdf,Juliana Vieira Ribeiro,2,,Juliana Vieira Ribeiro,2,True,2,1,2
+synth_filled_v2,pdf/84_auxiliar_de_cozinha_lucas_moreira_cavalcan_f08.pdf,Lucas Moreira Cavalcante,1,,Lucas Moreira Cavalcante,2,True,1,1,1
+synth_filled_v2,pdf/85_balconista_de_farmac_lucas_moreira_gomes_multiemail_f09.pdf,Lucas Moreira Gomes,3,,Lucas Moreira Gomes,3,True,3,2,3
+synth_filled_v2,pdf/86_balconista_de_farmac_isabela_almeida_ferrei_f10.pdf,Isabela Almeida Ferreira,3,,Isabela Almeida Ferreira,3,True,3,3,3
+synth_filled_v2,pdf/87_gerente_de_loja_lucas_martins_fernande_f11.pdf,Lucas Martins Fernandes,1,,Lucas Martins Fernandes,1,True,1,1,0
+synth_filled_v2,pdf/88_gerente_de_filial_rodrigo_pereira_barbos_p00.pdf,Rodrigo Pereira Barbosa,2,,Rodrigo Pereira Barbosa,2,True,2,1,2
+synth_filled_v2,pdf/89_operador_de_sac_bernardo_monteiro_cava_p01.pdf,Bernardo Monteiro Cavalcante,2,,Bernardo Monteiro Cavalcante,2,True,2,2,2
+synth_filled_v2,pdf/90_auxiliar_de_estoque_ana_carvalho_barbosa_upper_p02.pdf,ANA CARVALHO BARBOSA,2,,ANA CARVALHO BARBOSA,2,True,2,2,2
+synth_filled_v2,pdf/91_assistente_administr_bernardo_cardoso_mende_f00.pdf,Bernardo Cardoso Mendes,1,,Bernardo Cardoso Mendes,1,True,1,1,1
+synth_filled_v2,pdf/92_enfermeiro_assistenc_bruna_martins_cardoso_f01.pdf,Bruna Martins Cardoso,2,,Bruna Martins Cardoso,3,True,2,0,2
+synth_filled_v2,pdf/93_motorista_entregador_juliana_monteiro_barbo_f02.pdf,Juliana Monteiro Barbosa,2,,Juliana Monteiro,2,True,2,1,2
+synth_filled_v2,pdf/94_gerente_de_loja_leticia_martins_pinto_f03.pdf,Letícia Martins Pinto,3,,Martins Pinto,3,True,3,3,3
+synth_filled_v2,pdf/95_balconista_de_farmac_ana_lima_nascimento_noaccent_f04.pdf,Ana Lima Nascimento,3,,Lima Nascimento,3,True,3,3,3
+synth_filled_v2,pdf/96_auxiliar_de_limpeza_rafael_pereira_macedo_f05.pdf,Rafael Pereira Macedo,3,,Rafael Pereira Macedo,3,True,3,2,3
+synth_filled_v2,pdf/97_enfermeira_lucas_oliveira_nascime_f06.pdf,Lucas Oliveira Nascimento,3,,Lucas Oliveira Nascimento,3,True,3,3,3
+synth_filled_v2,pdf/98_analista_financeiro__andre_ribeiro_monteiro_f07.pdf,André Ribeiro Monteiro,2,,André Ribeiro Monteiro,2,True,2,1,2
+synth_filled_v2,pdf/99_auxiliar_administrat_caio_ribeiro_cavalcant_f08.pdf,Caio Ribeiro Cavalcante,1,,Caio Ribeiro Cavalcante,2,True,1,1,1
+synth_filled_v2,pdf/100_operador_de_caixa_pedro_barbosa_monteiro_multiemail_f09.pdf,Pedro Barbosa Monteiro,2,,Pedro Barbosa Monteiro,2,True,2,0,2
+synth_filled_v2,pdf/101_atendente_de_caixa_amanda_gomes_almeida_f10.pdf,Amanda Gomes Almeida,3,,Amanda Gomes Almeida,3,True,3,3,3
+synth_filled_v2,pdf/102_tecnico_de_enfermage_marcelo_rodrigues_cost_f11.pdf,Marcelo Rodrigues Costa,1,,Marcelo Rodrigues Costa,1,True,1,1,0
+synth_filled_v2,pdf/103_engenheiro_de_softwa_debora_barbosa_barbosa_p00.pdf,Débora Barbosa Barbosa,2,,Débora Barbosa Barbosa,2,True,2,2,2
+synth_filled_v2,pdf/104_operadora_de_caixa_rafael_cardoso_teixeir_p01.pdf,Rafael Cardoso Teixeira,2,,Rafael Cardoso Teixeira,2,True,2,2,2
+synth_filled_v2,pdf/105_vendedor_leonardo_nogueira_souz_upper_p02.pdf,LEONARDO NOGUEIRA SOUZA,3,,LEONARDO NOGUEIRA SOUZA,3,True,3,3,3
+synth_filled_v2,pdf/106_atendente_de_recepca_rafaela_rodrigues_viei_f00.pdf,Rafaela Rodrigues Vieira,2,,Rafaela Rodrigues Vieira,2,True,2,1,2
+synth_filled_v2,pdf/107_conferente_lucas_rodrigues_pinto_f01.pdf,Lucas Rodrigues Pinto,2,,Lucas Rodrigues Pinto,2,True,2,2,2
+synth_filled_v2,pdf/108_auxiliar_administrat_otavio_mendes_barbosa_f02.pdf,Otávio Mendes Barbosa,1,,Ensino Médio Completo,1,False,1,0,0
+synth_filled_v2,pdf/109_gerente_de_filial_debora_silva_cardoso_f03.pdf,Débora Silva Cardoso,2,,Silva Cardoso,2,True,2,2,2
+synth_filled_v2,pdf/110_atendente_de_farmaci_davi_pereira_almeida_noaccent_f04.pdf,Davi Pereira Almeida,2,,Pereira Almeida,2,True,2,1,2
+synth_filled_v2,pdf/111_atendente_de_caixa_pedro_ferreira_macedo_f05.pdf,Pedro Ferreira Macedo,2,,Pedro Ferreira Ma,2,True,2,0,2
+synth_filled_v2,pdf/112_auxiliar_de_recursos_ana_cavalcante_rodrigu_f06.pdf,Ana Cavalcante Rodrigues,1,,Ana Cavalcante Rodrigues,1,True,1,1,1
+synth_filled_v2,pdf/113_consultor_de_vendas_igor_cavalcante_pinto_f07.pdf,Igor Cavalcante Pinto,2,,Igor Cavalcante Pinto,2,True,2,2,2
+synth_filled_v2,pdf/114_balconista_de_farmac_rodrigo_nogueira_carva_f08.pdf,Rodrigo Nogueira Carvalho,3,,Rodrigo Nogueira C,3,True,3,2,3
+synth_filled_v2,pdf/115_gerente_de_loja_mateus_cardoso_ribeiro_multiemail_f09.pdf,Mateus Cardoso Ribeiro,2,,Mateus Cardoso Ribeiro,2,True,2,1,1
+synth_filled_v2,pdf/116_auxiliar_de_estoque_gabriela_araujo_almeid_f10.pdf,Gabriela Araújo Almeida,3,,Gabriela Araújo Almeida,3,True,3,2,3
+synth_filled_v2,pdf/117_auxiliar_de_limpeza_otavio_macedo_ferreira_f11.pdf,Otávio Macedo Ferreira,1,,Otávio Macedo Ferreira,1,True,1,1,0
+synth_filled_v2,pdf/118_estoquista_vitoria_vieira_pereira_p00.pdf,Vitória Vieira Pereira,2,,Vitória Vieira Pereira,2,True,2,0,2
+synth_filled_v2,pdf/119_atendente_de_farmaci_thiago_cardoso_lima_p01.pdf,Thiago Cardoso Lima,1,,Thiago Cardoso Lima,1,True,1,0,1
+synth_filled_v2,pdf/120_repositor_de_mercado_bruno_almeida_pereira_upper_p02.pdf,BRUNO ALMEIDA PEREIRA,2,,BRUNO ALMEIDA PEREIRA,2,True,2,2,2
+synth_filled_v2,docx/121_auxiliar_administrat_leticia_lima_mendes.docx,Letícia Lima Mendes,1,,Letícia Lima Mendes,1,True,1,1,1
+synth_filled_v2,docx/122_atendente_de_caixa_larissa_cardoso_santos.docx,Larissa Cardoso Santos,2,,LARISSA CARDOSO SANTOS,3,True,2,2,2
+synth_filled_v2,docx/123_balconista_de_farmac_pedro_almeida_correia.docx,Pedro Almeida Correia,3,,Pedro Almeida Correia,3,True,3,3,3
+synth_filled_v2,docx/124_desenvolvedor_backen_tatiane_ferreira_costa.docx,Tatiane Ferreira Costa,3,,Tatiane Ferreira Costa,0,True,0,0,0
+synth_filled_v2,docx/125_balconista_de_farmac_thiago_lima_pereira_noaccent.docx,Thiago Lima Pereira,2,,Thiago Lima Pereira,2,True,2,1,2
+synth_filled_v2,docx/126_auxiliar_de_servicos_davi_martins_cardoso.docx,Davi Martins Cardoso,2,,Davi Martins Cardoso,2,True,2,1,2
+synth_filled_v2,docx/127_atendente_de_farmaci_marcelo_pinto_teixeira.docx,Marcelo Pinto Teixeira,2,,Marcelo Pinto Teixeira,2,True,2,1,2
+synth_filled_v2,docx/128_consultor_de_vendas_otavio_pereira_ferreir.docx,Otávio Pereira Ferreira,3,,OTÁVIO PEREIRA FERREIRA,4,True,3,3,3
+synth_filled_v2,docx/129_estoquista_bruna_cardoso_silva.docx,Bruna Cardoso Silva,3,,Bruna Cardoso Silva,3,True,3,3,3
+synth_filled_v2,docx/130_operadora_de_caixa_rodrigo_barbosa_ferrei_multiemail.docx,Rodrigo Barbosa Ferreira,3,,Rodrigo Barbosa Ferreira,3,True,3,2,3
+synth_filled_v2,docx/131_operadora_de_caixa_marcelo_monteiro_olive.docx,Marcelo Monteiro Oliveira,3,,Marcelo Monteiro Oliveira,3,True,3,2,3
+synth_filled_v2,docx/132_operador_de_caixa_tatiane_souza_freitas.docx,Tatiane Souza Freitas,3,,Tatiane Souza Freitas,3,True,3,3,3
+synth_filled_v2,docx/133_motorista_de_entrega_leticia_rodrigues_barb.docx,Letícia Rodrigues Barbosa,3,,Letícia Rodrigues Barbosa,3,True,3,3,3
+synth_filled_v2,docx/134_enfermeiro_assistenc_rodrigo_almeida_cardos.docx,Rodrigo Almeida Cardoso,3,,RODRIGO ALMEIDA CARDOSO,4,True,3,2,3
+synth_filled_v2,docx/135_acougueiro_murilo_araujo_santos_upper.docx,MURILO ARAÚJO SANTOS,2,,MURILO ARAÚJO SANTOS,2,True,2,1,2
+synth_filled_v2,docx/136_cozinheiro_camila_freitas_ribeiro.docx,Camila Freitas Ribeiro,2,,Camila Freitas Ribeiro,2,True,2,2,2
+synth_filled_v2,docx/137_consultor_de_vendas_maria_ferreira_ribeiro.docx,Maria Ferreira Ribeiro,1,,Maria Ferreira Ribeiro,1,True,1,1,1
+synth_filled_v2,docx/138_balconista_de_farmac_igor_souza_nogueira.docx,Igor Souza Nogueira,2,,Igor Souza Nogueira,2,True,2,1,2
+synth_filled_v2,docx/139_atendente_de_caixa_tatiane_oliveira_morei.docx,Tatiane Oliveira Moreira,3,,Tatiane Oliveira Moreira,3,True,3,2,3
+synth_filled_v2,docx/140_gerente_de_loja_helena_costa_teixeira_noaccent.docx,Helena Costa Teixeira,1,,HELENA COSTA TEIXEIRA,2,True,1,1,1
+synth_filled_v2,docx/141_operadora_de_caixa_lucas_souza_barbosa.docx,Lucas Souza Barbosa,3,,Lucas Souza Barbosa,3,True,3,3,3
+synth_filled_v2,docx/142_enfermeiro_thiago_oliveira_gomes.docx,Thiago Oliveira Gomes,3,,Thiago Oliveira Gomes,3,True,3,3,3
+synth_filled_v2,docx/143_conferente_mariana_correia_noguei.docx,Mariana Correia Nogueira,1,,Mariana Correia Nogueira,1,True,1,1,0
+synth_filled_v2,docx/144_operador_de_caixa_larissa_ribeiro_olivei.docx,Larissa Ribeiro Oliveira,1,,Larissa Ribeiro Oliveira,1,True,1,1,1
+synth_filled_v2,docx/145_auxiliar_de_reposica_patricia_freitas_cardo_multiemail.docx,Patrícia Freitas Cardoso,2,,Patrícia Freitas Cardoso,2,True,2,2,2
+synth_filled_v2,pdf/300_engenheiro_de_software_andre_moreira_ribeiro_plain_left_gutter.pdf,André Moreira Ribeiro,1,,André Moreira Ribeiro,2,True,1,0,1
+synth_filled_v2,pdf/301_operadora_de_caixa_maria_correia_ferreira_plain_left_gutter.pdf,Maria Correia Ferreira,3,,Maria Correia Ferreira,4,True,3,3,3
+synth_filled_v2,pdf/302_operador_de_sac_beatriz_ribeiro_mendes_designer_outlined_box.pdf,Beatriz Ribeiro Mendes,3,,Beatriz Ribeiro Mendes,3,True,3,2,1
+synth_filled_v2,pdf/303_auxiliar_de_acougue_rafael_nogueira_martins_plain_single.pdf,Rafael Nogueira Martins,3,,Rafael Nogueira Martins,3,True,3,2,3
+synth_filled_v2,pdf/304_vendedora_davi_nascimento_santos_sidebar_contact_left.pdf,Davi Nascimento Santos,2,,Davi Nascimento Santos,1,True,1,0,0
+synth_filled_v2,pdf/305_conferente_renata_nogueira_nogueira_concurso.pdf,Renata Nogueira Nogueira,2,,Renata Nogueira Nogueira,2,True,2,1,2
+synth_filled_v2,pdf/306_estoquista_daniel_pinto_almeida_designer_outlined_box.pdf,Daniel Pinto Almeida,1,,Daniel Pinto Almeida,1,True,1,1,1
+synth_filled_v2,pdf/307_cozinheira_murilo_almeida_ribeiro_plain_single.pdf,Murilo Almeida Ribeiro,2,,Murilo Almeida Ribeiro,2,True,2,2,2
+synth_filled_v2,pdf/308_analista_financeiro_ju_bernardo_macedo_monteiro_sidebar_contact_left.pdf,Bernardo Macedo Monteiro,2,,Bernardo Macedo Monteiro,2,True,2,1,2
+synth_filled_v2,pdf/309_auxiliar_de_servicos_g_andre_rodrigues_cavalcan_sidebar_contact_left.pdf,André Rodrigues Cavalcante,3,,André Rodrigues Cavalcante,3,True,3,2,3
+synth_filled_v2,pdf/310_atendente_de_caixa_priscila_teixeira_araujo_designer_monogram.pdf,Priscila Teixeira Araújo,1,,Priscila Teixeira Araújo,1,True,1,0,1
+synth_filled_v2,pdf/311_acougueiro_gustavo_moreira_teixeira_plain_left_gutter.pdf,Gustavo Moreira Teixeira,3,,Gustavo Moreira Teixeira,4,True,3,3,3
+synth_filled_v2,pdf/312_auxiliar_administrativ_rafael_pereira_gomes_sidebar_contact_left.pdf,Rafael Pereira Gomes,2,,Rafael Pereira Gomes,2,True,2,2,2
+synth_filled_v2,pdf/313_balconista_de_farmacia_patricia_nascimento_more_designer_bracket_frame.pdf,Patrícia Nascimento Moreira,3,,Patrícia Nascimento Moreira,3,True,3,2,3
+synth_filled_v2,pdf/314_engenheiro_de_software_isabela_costa_cardoso_designer_outlined_box.pdf,Isabela Costa Cardoso,3,,Isabela Costa Cardoso,3,True,3,2,3
+synth_filled_v2,pdf/315_atendente_de_caixa_lucas_moreira_pinto_sidebar_right.pdf,Lucas Moreira Pinto,2,,Lucas Moreira Pinto,2,True,2,2,2
+synth_filled_v2,pdf/316_atendente_de_telemarke_larissa_ferreira_macedo_sidebar_contact_left.pdf,Larissa Ferreira Macedo,2,,Larissa Ferreira Macedo,1,True,1,0,2
+synth_filled_v2,pdf/317_tecnica_em_enfermagem_daniel_macedo_rodrigues_concurso.pdf,Daniel Macedo Rodrigues,2,,Daniel Macedo Rodrigues,2,True,2,1,2
+synth_filled_v2,pdf/318_auxiliar_de_servicos_g_tatiane_souza_teixeira_plain_single.pdf,Tatiane Souza Teixeira,1,,Tatiane Souza Teixeira,1,True,1,1,1
+synth_filled_v2,pdf/319_auxiliar_de_cozinha_davi_mendes_santos_designer_bracket_frame.pdf,Davi Mendes Santos,3,,Davi Mendes Santos,3,True,3,1,3
+synth_filled_v2,pdf/320_recepcionista_de_clini_murilo_pinto_moreira_sidebar_contact_right.pdf,Murilo Pinto Moreira,1,,Murilo Pinto Moreira,1,True,1,0,1
+synth_filled_v2,pdf/321_enfermeira_bernardo_vieira_costa_designer_color_boxes.pdf,Bernardo Vieira Costa,3,,Vieira Costa,3,True,3,3,3
+synth_filled_v2,pdf/322_recepcionista_mariana_ferreira_carvalh_designer_banner.pdf,Mariana Ferreira Carvalho,2,,Mariana Ferreira Carvalho,2,True,2,1,2
+synth_filled_v2,pdf/323_atendente_de_farmacia_gustavo_oliveira_souza_sidebar_right.pdf,Gustavo Oliveira Souza,1,,Gustavo Oliveira,2,True,1,0,1
+synth_filled_v2,pdf/324_gerente_de_loja_felipe_barbosa_pereira_plain_single.pdf,Felipe Barbosa Pereira,1,,Felipe Barbosa Pereira,1,True,1,1,1
+synth_filled_v2,pdf/325_auxiliar_de_servicos_g_debora_correia_costa_sidebar_contact_left.pdf,Débora Correia Costa,1,,Débora Correia Costa,1,True,1,0,1
+synth_filled_v2,pdf/326_recepcionista_renata_cavalcante_moreir_concurso.pdf,Renata Cavalcante Moreira,3,,Renata Cavalcante Moreira,3,True,3,3,3
+synth_filled_v2,pdf/327_tecnica_em_enfermagem_carolina_martins_souza_designer_outlined_box.pdf,Carolina Martins Souza,3,,Carolina Martins,3,True,3,3,0
+synth_filled_v2,pdf/328_vendedora_aline_martins_monteiro_designer_bracket_frame.pdf,Aline Martins Monteiro,1,,Aline Martins Mo,1,True,1,0,1
+synth_filled_v2,pdf/329_estoquista_juliana_monteiro_correia_plain_single.pdf,Juliana Monteiro Correia,1,,Juliana Monteiro Correia,1,True,1,1,1
+synth_filled_v2,pdf/330_auxiliar_de_limpeza_lucas_rodrigues_rodrigue_designer_plain.pdf,Lucas Rodrigues Rodrigues,3,,Lucas Rodrigues Rodrigues,3,True,3,3,3
+synth_filled_v2,pdf/331_enfermeiro_leonardo_nogueira_rodrig_designer_banner_diagonal.pdf,Leonardo Nogueira Rodrigues,1,,Leonardo Nogueira Rodrigues,1,True,1,1,0
+synth_filled_v2,pdf/332_repositor(a)_de_loja_daniel_almeida_pinto_sidebar_left.pdf,Daniel Almeida Pinto,2,,Daniel Almeida Pinto,3,True,2,1,0
+synth_filled_v2,pdf/333_enfermeiro_assistencia_ana_vieira_nascimento_designer_outlined_box.pdf,Ana Vieira Nascimento,2,,Ana Vieira Nascimento,2,True,2,1,2
+synth_filled_v2,pdf/334_repositor(a)_de_loja_eduardo_pereira_correia_sidebar_contact_right.pdf,Eduardo Pereira Correia,3,,Eduardo Pereira Correia,3,True,3,2,0
+synth_filled_v2,pdf/335_auxiliar_de_limpeza_gustavo_carvalho_nogueir_designer_bracket_frame.pdf,Gustavo Carvalho Nogueira,1,,Gustavo Carvalho N,1,True,1,1,1
+synth_filled_v2,pdf/336_conferente_otavio_fernandes_martins_sidebar_contact_left.pdf,Otávio Fernandes Martins,1,,Otávio Fernandes Martins,1,True,1,1,0
+synth_filled_v2,pdf/337_repositor(a)_de_loja_leonardo_martins_barbosa_designer_outlined_box.pdf,Leonardo Martins Barbosa,1,,Leonardo Martins Barbosa,2,True,1,1,0
+synth_filled_v2,pdf/338_atendente_de_recepcao_daniel_carvalho_silva_designer_outlined_box.pdf,Daniel Carvalho Silva,3,,Daniel Carvalho Silva,3,True,3,2,3
+synth_filled_v2,pdf/339_auxiliar_de_servicos_g_beatriz_nascimento_nogue_designer_banner_diagonal.pdf,Beatriz Nascimento Nogueira,3,,Beatriz Nascimento Nogueira,3,True,3,1,3
+synth_filled_v2,pdf/340_auxiliar_de_recursos_h_thiago_costa_martins_designer_bracket_frame.pdf,Thiago Costa Martins,1,,Thiago Costa Martins,1,True,1,1,1
+synth_filled_v2,pdf/341_engenheiro_de_software_bernardo_souza_correia_sidebar_contact_right.pdf,Bernardo Souza Correia,2,,Bernardo Souza Correia,2,True,2,2,2
+synth_filled_v2,pdf/342_vendedor_debora_macedo_ferreira_designer_accent_rule.pdf,Débora Macedo Ferreira,3,,Débora Macedo Ferreira,3,True,3,3,3
+synth_filled_v2,pdf/343_repositor_de_mercadori_gabriela_gomes_martins_plain_single.pdf,Gabriela Gomes Martins,1,,Gabriela Gomes Martins,1,True,1,0,1
+synth_filled_v2,pdf/344_tecnico_de_enfermagem_sophia_araujo_almeida_designer_bracket_frame.pdf,Sophia Araújo Almeida,1,,Sophia Araújo Al,1,True,1,0,0
+synth_filled_v2,pdf/345_vendedor_tatiane_araujo_araujo_designer_centered_rule.pdf,Tatiane Araújo Araújo,3,,Tatiane Araújo A,3,True,3,3,3
+synth_filled_v2,pdf/346_cozinheira_davi_nogueira_barbosa_sidebar_contact_left.pdf,Davi Nogueira Barbosa,1,,Davi Nogueira Barbosa,1,True,1,1,1
+synth_filled_v2,pdf/347_repositor(a)_de_loja_igor_costa_gomes_plain_single.pdf,Igor Costa Gomes,1,,Igor Costa Gomes,1,True,1,1,0
+synth_filled_v2,pdf/348_atendente_de_farmacia_mariana_ferreira_macedo_sidebar_right.pdf,Mariana Ferreira Macedo,3,,Controledemedicamentossujeitosareceitae SNGPC,3,False,3,3,3
+synth_filled_v2,pdf/349_motorista_entregador_camila_monteiro_correia_plain_left_gutter.pdf,Camila Monteiro Correia,3,,Camila Monteiro Correia,4,True,3,1,3
+synth_filled_v2,pdf/350_consultor_de_vendas_mateus_mendes_fernandes_designer_banner_diagonal.pdf,Mateus Mendes Fernandes,3,,Mateus Mendes Fernande,3,True,3,2,3
+synth_filled_v2,pdf/351_repositor(a)_de_loja_bruno_oliveira_rodrigues_designer_bracket_frame.pdf,Bruno Oliveira Rodrigues,1,,Bruno Oliveira R,1,True,1,1,0
+synth_filled_v2,pdf/352_estoquista_mateus_monteiro_cavalcan_plain_single.pdf,Mateus Monteiro Cavalcante,3,,Mateus Monteiro Cavalcante,3,True,3,1,3
+synth_filled_v2,pdf/353_estoquista_bruno_macedo_martins_sidebar_left.pdf,Bruno Macedo Martins,2,,Bruno Macedo Martins,2,True,2,2,2
+synth_filled_v2,pdf/354_cozinheiro_rodrigo_correia_gomes_plain_left_gutter.pdf,Rodrigo Correia Gomes,1,,Rodrigo Correia Gomes,2,True,1,1,1
+synth_filled_v2,pdf/355_gerente_de_loja_priscila_teixeira_montei_designer_plain.pdf,Priscila Teixeira Monteiro,3,,Priscila Teixeira Monteiro,3,True,3,3,2
+synth_filled_v2,pdf/356_desenvolvedor_backend_rafael_costa_fernandes_designer_centered_rule.pdf,Rafael Costa Fernandes,2,,Rafael Costa Fernandes,2,True,2,1,0
+synth_filled_v2,pdf/357_auxiliar_de_recursos_h_vitoria_almeida_araujo_sidebar_right.pdf,Vitória Almeida Araújo,2,,Vitória Almeida,2,True,2,1,2
+synth_filled_v2,pdf/358_auxiliar_de_acougue_vinicius_pereira_martins_plain_single.pdf,Vinícius Pereira Martins,3,,Vinícius Pereira Martins,3,True,3,2,3
+synth_filled_v2,pdf/359_operador_de_caixa_lucas_oliveira_vieira_concurso.pdf,Lucas Oliveira Vieira,3,,Lucas Oliveira Vieira,3,True,3,3,3
+synth_filled_v2,pdf/360_repositor_de_mercadori_mateus_gomes_carvalho_designer_outlined_box.pdf,Mateus Gomes Carvalho,2,,Mateus Gomes Carvalho,2,True,2,2,2
+synth_filled_v2,pdf/361_gerente_de_loja_sophia_barbosa_freitas_designer_accent_rule.pdf,Sophia Barbosa Freitas,2,,Sophia Barbosa Freitas,2,True,2,2,2
+synth_filled_v2,pdf/362_desenvolvedor_backend_gustavo_martins_santos_concurso.pdf,Gustavo Martins Santos,2,,Gustavo Martins Santos,2,True,2,2,2
+synth_filled_v2,pdf/363_tecnica_em_enfermagem_helena_costa_almeida_designer_banner.pdf,Helena Costa Almeida,3,,Helena Costa Almeida,3,True,3,3,0
+synth_filled_v2,pdf/364_gerente_de_filial_mateus_fernandes_santos_sidebar_contact_right.pdf,Mateus Fernandes Santos,1,,Mateus Fernandes Santos,1,True,1,0,0
+synth_filled_v2,pdf/365_tecnica_em_enfermagem_isabela_carvalho_nascime_designer_centered_rule.pdf,Isabela Carvalho Nascimento,3,,Isabela Carvalho Na,3,True,3,2,0
+synth_filled_v2,pdf/366_balconista_de_farmacia_aline_moreira_teixeira_designer_monogram.pdf,Aline Moreira Teixeira,2,,Aline Moreira Teixeira,2,True,2,1,2
+synth_filled_v2,pdf/367_auxiliar_financeiro_enzo_cardoso_souza_designer_outlined_box.pdf,Enzo Cardoso Souza,3,,Enzo Cardoso S,3,True,3,1,3
+synth_filled_v2,pdf/368_repositor_de_mercadori_camila_pinto_silva_concurso.pdf,Camila Pinto Silva,2,,Camila Pinto Silva,2,True,2,1,2
+synth_filled_v2,pdf/369_auxiliar_de_limpeza_amanda_ribeiro_mendes_designer_banner_diagonal.pdf,Amanda Ribeiro Mendes,1,,Amanda Ribeiro Mendes,1,True,1,1,1
+synth_filled_v2,pdf/370_auxiliar_de_recursos_h_beatriz_moreira_barbosa_plain_left_gutter.pdf,Beatriz Moreira Barbosa,3,,Beatriz Moreira Barbosa,4,True,3,1,3
+synth_filled_v2,pdf/371_assistente_administrat_rodrigo_carvalho_martins_sidebar_left.pdf,Rodrigo Carvalho Martins,3,,Rodrigo Carvalho,3,True,3,3,3
+synth_filled_v2,pdf/372_gerente_de_loja_debora_moreira_silva_designer_outlined_box.pdf,Débora Moreira Silva,2,,Débora Moreira Silva,2,True,2,1,2
+synth_filled_v2,pdf/373_operadora_de_caixa_beatriz_araujo_costa_designer_color_boxes.pdf,Beatriz Araújo Costa,1,,Araújo Costa,1,True,1,0,1
+synth_filled_v2,pdf/374_atendente_de_telemarke_renata_santos_nogueira_designer_bracket_frame.pdf,Renata Santos Nogueira,3,,Renata Santos Nogueira,3,True,3,2,3
+synth_filled_v2,pdf/375_assistente_administrat_rafaela_almeida_silva_designer_color_boxes.pdf,Rafaela Almeida Silva,3,,Almeida Silva,3,True,3,3,3
+synth_filled_v2,pdf/376_motorista_de_entrega_davi_almeida_correia_concurso.pdf,Davi Almeida Correia,1,,Davi Almei da Correia,1,False,1,0,1
+synth_filled_v2,pdf/377_auxiliar_de_servicos_g_leticia_nogueira_ribeiro_sidebar_right.pdf,Letícia Nogueira Ribeiro,2,,Letícia Nogueira,2,True,2,1,2
+synth_filled_v2,pdf/378_assistente_administrat_priscila_carvalho_olivei_sidebar_right.pdf,Priscila Carvalho Oliveira,1,,Priscila Carvalho,2,True,1,0,1
+synth_filled_v2,pdf/379_tecnica_em_enfermagem_bernardo_fernandes_caval_designer_accent_rule.pdf,Bernardo Fernandes Cavalcante,1,,Bernardo Fernandes Cavalc,1,True,1,1,0
+synth_filled_v2,pdf/380_repositor_de_mercadori_bernardo_freitas_rodrigu_sidebar_contact_right.pdf,Bernardo Freitas Rodrigues,2,,Bernardo Freitas Rodrigues,2,True,2,1,2
+synth_filled_v2,pdf/381_recepcionista_de_clini_larissa_macedo_gomes_sidebar_right.pdf,Larissa Macedo Gomes,3,,Larissa Macedo,3,True,3,3,3
+synth_filled_v2,pdf/382_operadora_de_caixa_debora_santos_vieira_designer_color_boxes.pdf,Débora Santos Vieira,3,,Santos Vieira,3,True,3,2,3
+synth_filled_v2,pdf/383_tecnico_de_enfermagem_maria_moreira_souza_designer_banner.pdf,Maria Moreira Souza,3,,Maria Moreira Souza,3,True,3,3,0
+synth_filled_v2,pdf/384_desenvolvedor_backend_marcelo_freitas_martins_designer_bracket_frame.pdf,Marcelo Freitas Martins,1,,Marcelo Freitas Martins,1,True,1,0,0
+synth_filled_v2,pdf/385_tecnico_de_enfermagem_felipe_teixeira_silva_concurso.pdf,Felipe Teixeira Silva,1,,Felipe Teixeira Silva,1,True,1,0,1
+synth_filled_v2,pdf/386_repositor(a)_de_loja_tatiane_ferreira_martins_designer_outlined_box.pdf,Tatiane Ferreira Martins,3,,Tatiane Ferreira M,3,True,3,2,0
+synth_filled_v2,pdf/387_cozinheira_enzo_santos_cardoso_plain_single.pdf,Enzo Santos Cardoso,1,,Enzo Santos Cardoso,1,True,1,1,1
+synth_filled_v2,pdf/388_operador_de_caixa_amanda_ribeiro_rodrigues_designer_outlined_box.pdf,Amanda Ribeiro Rodrigues,3,,Amanda Ribeiro Rodrigues,3,True,3,1,3
+synth_filled_v2,pdf/389_atendente_de_telemarke_andre_costa_pinto_designer_color_boxes.pdf,André Costa Pinto,2,,Costa Pinto,2,True,2,1,2
+synth_filled_v2,pdf/390_gerente_de_filial_fernanda_almeida_ribeiro_concurso.pdf,Fernanda Almeida Ribeiro,2,,Fernan da Almei da Ribeiro,2,False,2,1,2
+synth_filled_v2,pdf/391_analista_financeiro_ju_joao_correia_macedo_sidebar_contact_left.pdf,João Correia Macedo,2,,João Correia Macedo,2,True,2,1,2
+synth_filled_v2,pdf/392_enfermeiro_gabriela_teixeira_almeid_designer_monogram.pdf,Gabriela Teixeira Almeida,3,,Gabriela Teixeira Almeida,3,True,3,3,3
+synth_filled_v2,pdf/393_desenvolvedor_backend_rafaela_carvalho_rodrigu_plain_single.pdf,Rafaela Carvalho Rodrigues,3,,Rafaela Carvalho Rodrigues,3,True,3,2,0
+synth_filled_v2,pdf/394_tecnico_de_enfermagem_daniel_carvalho_pinto_designer_banner_diagonal.pdf,Daniel Carvalho Pinto,3,,Daniel Carvalho Pinto,3,True,3,3,0
+synth_filled_v2,pdf/395_gerente_de_filial_debora_mendes_freitas_designer_accent_rule.pdf,Débora Mendes Freitas,2,,Débora Mendes Freitas,2,True,2,2,2
+synth_filled_v2,pdf/396_auxiliar_de_estoque_otavio_almeida_rodrigues_designer_banner.pdf,Otávio Almeida Rodrigues,3,,Otávio Almeida Rodrigues,3,True,3,2,3
+synth_filled_v2,pdf/397_operadora_de_caixa_camila_silva_moreira_plain_single.pdf,Camila Silva Moreira,1,,Camila Silva Moreira,1,True,1,1,1
+synth_filled_v2,pdf/398_auxiliar_de_reposicao_gustavo_nascimento_marti_designer_monogram.pdf,Gustavo Nascimento Martins,2,,Gustavo Nascimento Martins,2,True,2,0,2
+synth_filled_v2,pdf/399_repositor_de_mercadori_amanda_teixeira_freitas_plain_left_gutter.pdf,Amanda Teixeira Freitas,3,,Amanda Teixeira Freitas,4,True,3,3,3
+synth_filled_v2,pdf/400_repositor_de_mercadori_fernanda_santos_teixeira_designer_centered_rule.pdf,Fernanda Santos Teixeira,2,,Fernanda Santos T,2,True,2,2,2
+synth_filled_v2,pdf/401_auxiliar_de_acougue_rafael_souza_ferreira_plain_single.pdf,Rafael Souza Ferreira,1,,Rafael Souza Ferreira,1,True,1,1,1
+synth_filled_v2,pdf/402_gerente_de_filial_camila_gomes_fernandes_concurso.pdf,Camila Gomes Fernandes,1,,Camila Gomes Fernandes,1,True,1,1,1
+synth_filled_v2,pdf/403_assistente_administrat_ana_gomes_ribeiro_designer_color_boxes.pdf,Ana Gomes Ribeiro,1,,Gomes Ribeiro,1,True,1,1,0
+synth_filled_v2,pdf/404_auxiliar_de_cozinha_ana_santos_ribeiro_designer_centered_rule.pdf,Ana Santos Ribeiro,2,,Ana Santos Ribeiro,2,True,2,1,2
+synth_filled_v2,pdf/405_enfermeiro_assistencia_felipe_macedo_pinto_designer_bracket_frame.pdf,Felipe Macedo Pinto,3,,Felipe Macedo Pinto,3,True,3,2,3
+synth_filled_v2,pdf/406_operadora_de_caixa_mariana_ribeiro_martins_designer_color_boxes.pdf,Mariana Ribeiro Martins,2,,Ribeiro Martins,2,True,2,2,2
+synth_filled_v2,pdf/407_auxiliar_de_servicos_g_amanda_freitas_ferreira_designer_outlined_box.pdf,Amanda Freitas Ferreira,3,,Amanda Freitas Ferreira,3,True,3,2,3
+synth_filled_v2,pdf/408_repositor_de_mercadori_larissa_monteiro_nogueir_sidebar_left.pdf,Larissa Monteiro Nogueira,2,,Larissa Mont,2,True,2,1,2
+synth_filled_v2,pdf/409_assistente_administrat_carolina_macedo_correia_designer_monogram.pdf,Carolina Macedo Correia,3,,Carolina Macedo Corre,3,True,3,3,3
+synth_filled_v2,pdf/410_auxiliar_financeiro_lucas_costa_moreira_designer_banner_diagonal.pdf,Lucas Costa Moreira,2,,Lucas Costa Moreira,2,True,2,2,2
+synth_filled_v2,pdf/411_auxiliar_financeiro_thiago_vieira_carvalho_sidebar_contact_left.pdf,Thiago Vieira Carvalho,2,,Thiago Vieira Carvalho,1,True,1,0,2
+synth_filled_v2,pdf/412_auxiliar_de_acougue_gabriela_ribeiro_costa_designer_plain.pdf,Gabriela Ribeiro Costa,1,,Gabriela Ribeiro Costa,1,True,1,1,0
+synth_filled_v2,pdf/413_assistente_de_rh_larissa_araujo_pereira_designer_banner.pdf,Larissa Araújo Pereira,3,,Larissa Araújo Pereira,3,True,3,1,1
+synth_filled_v2,pdf/414_enfermeiro_fernanda_fernandes_gomes_concurso.pdf,Fernanda Fernandes Gomes,3,,Fernan da Fernandes Gomes,3,False,3,2,3
+synth_filled_v2,pdf/415_motorista_de_entrega_gabriel_freitas_carvalho_concurso.pdf,Gabriel Freitas Carvalho,2,,Gabriel Freitas Carvalho,2,True,2,2,2
+synth_filled_v2,pdf/416_assistente_de_rh_ana_rodrigues_barbosa_designer_banner.pdf,Ana Rodrigues Barbosa,1,,Ana Rodrigues Barbosa,1,True,1,0,0
+synth_filled_v2,pdf/417_auxiliar_de_servicos_g_eduardo_barbosa_macedo_sidebar_contact_right.pdf,Eduardo Barbosa Macedo,2,,Eduardo Barbosa Macedo,2,True,2,1,2
+synth_filled_v2,pdf/418_tecnica_em_enfermagem_vitoria_rodrigues_pereir_designer_outlined_box.pdf,Vitória Rodrigues Pereira,3,,Vitória Rodrigues Pereira,3,True,3,1,0
+synth_filled_v2,pdf/419_estoquista_thiago_nascimento_rodrig_sidebar_right.pdf,Thiago Nascimento Rodrigues,1,,Thiago Nascimento,1,True,1,1,1
+synth_filled_v2,pdf/420_atendente_de_farmacia_rodrigo_araujo_martins_concurso.pdf,Rodrigo Araújo Martins,3,,Rodrigo Araújo Martins,3,True,3,2,3
+synth_filled_v2,pdf/421_auxiliar_de_limpeza_felipe_silva_ferreira_designer_banner_diagonal.pdf,Felipe Silva Ferreira,1,,Felipe Silva Ferreira,1,True,1,0,1
+synth_filled_v2,pdf/422_enfermeiro_assistencia_renata_cavalcante_carval_designer_outlined_box.pdf,Renata Cavalcante Carvalho,2,,Renata Cavalcante Carvalho,2,True,2,1,2
+synth_filled_v2,pdf/423_tecnica_em_enfermagem_patricia_pinto_rodrigues_designer_banner.pdf,Patrícia Pinto Rodrigues,1,,Patrícia Pinto Rodrigues,1,True,1,1,0
+synth_filled_v2,pdf/424_gerente_de_filial_sophia_freitas_ribeiro_designer_banner.pdf,Sophia Freitas Ribeiro,3,,Sophia Freitas Ribeiro,3,True,3,3,3
+synth_filled_v2,pdf/425_gerente_de_loja_renata_pereira_gomes_sidebar_left.pdf,Renata Pereira Gomes,1,,Renata Pereira,1,True,1,0,0
+synth_filled_v2,pdf/426_auxiliar_administrativ_gustavo_teixeira_nascime_designer_color_boxes.pdf,Gustavo Teixeira Nascimento,1,,Teixeira Nascimento,2,True,1,1,1
+synth_filled_v2,pdf/427_conferente_isabela_silva_rodrigues_concurso.pdf,Isabela Silva Rodrigues,3,,Isabela Silva Rodrigues,3,True,3,2,3
+synth_filled_v2,pdf/428_assistente_de_rh_daniel_martins_pinto_sidebar_right.pdf,Daniel Martins Pinto,3,,Bacharelado em Administração,3,False,3,2,3
+synth_filled_v2,pdf/429_operador_de_caixa_pedro_souza_cavalcante_designer_outlined_box.pdf,Pedro Souza Cavalcante,2,,Pedro Souza Cavalcante,2,True,2,0,2
+synth_filled_v2,pdf/430_repositor_de_mercadori_daniel_monteiro_nascimen_designer_bracket_frame.pdf,Daniel Monteiro Nascimento,3,,Daniel Monteiro Nascimento,3,True,3,2,3
+synth_filled_v2,pdf/431_assistente_administrat_vinicius_ribeiro_ribeiro_sidebar_right.pdf,Vinícius Ribeiro Ribeiro,1,,Vinícius Ribeiro,2,True,1,0,1
+synth_filled_v2,pdf/432_consultor_de_vendas_leticia_correia_santos_sidebar_contact_right.pdf,Letícia Correia Santos,3,,Letícia Correia Santos,3,True,3,2,3
+synth_filled_v2,pdf/433_atendente_de_caixa_camila_monteiro_silva_sidebar_contact_left.pdf,Camila Monteiro Silva,3,,Camila Monteiro Silva,3,True,3,1,3
+synth_filled_v2,pdf/434_operador_de_caixa_eduardo_moreira_ferreira_concurso.pdf,Eduardo Moreira Ferreira,2,,Eduar do Moreira Ferreira,2,False,2,1,2
+synth_filled_v2,pdf/435_vendedora_marcelo_pinto_macedo_designer_monogram.pdf,Marcelo Pinto Macedo,1,,Marcelo Pinto Macedo,1,True,1,1,1
+synth_filled_v2,pdf/436_recepcionista_de_clini_fernanda_rodrigues_caval_designer_banner_diagonal.pdf,Fernanda Rodrigues Cavalcante,3,,Fernanda Rodrigues,3,True,3,2,3
+synth_filled_v2,pdf/437_tecnico_de_enfermagem_rafael_martins_cavalcant_plain_left_gutter.pdf,Rafael Martins Cavalcante,3,,Rafael Martins Cavalcante,4,True,3,3,0
+synth_filled_v2,pdf/438_atendente_de_caixa_mateus_carvalho_ribeiro_designer_accent_rule.pdf,Mateus Carvalho Ribeiro,2,,Mateus Carvalho Ribeiro,2,True,2,0,2
+synth_filled_v2,pdf/439_balconista_de_farmacia_daniel_correia_santos_designer_monogram.pdf,Daniel Correia Santos,2,,Daniel Correia Santos,2,True,2,1,2
+synth_filled_v2,pdf/440_cozinheiro_caio_pereira_monteiro_designer_plain.pdf,Caio Pereira Monteiro,1,,Caio Pereira Monteiro,1,True,1,1,0
+synth_filled_v2,pdf/441_vendedora_priscila_pereira_barbosa_sidebar_left.pdf,Priscila Pereira Barbosa,1,,Priscila Pereira,1,True,1,1,1
+synth_filled_v2,pdf/442_auxiliar_de_acougue_igor_vieira_barbosa_sidebar_right.pdf,Igor Vieira Barbosa,3,,Igor Vieira Barbosa,2,True,2,1,3
+synth_filled_v2,pdf/443_atendente_de_caixa_rafael_cardoso_nasciment_designer_banner.pdf,Rafael Cardoso Nascimento,1,,Rafael Cardoso,1,True,1,1,1
+synth_filled_v2,pdf/444_atendente_de_recepcao_bruno_moreira_nascimento_concurso.pdf,Bruno Moreira Nascimento,3,,Bruno Moreira Nascimento,3,True,3,2,3
+synth_filled_v2,pdf/445_auxiliar_de_acougue_rafaela_gomes_rodrigues_designer_banner_diagonal.pdf,Rafaela Gomes Rodrigues,3,,Rafaela Gomes Rodrigues,3,True,3,1,3
+synth_filled_v2,pdf/446_conferente_igor_lima_pinto_plain_left_gutter.pdf,Igor Lima Pinto,2,,Igor Lima Pinto,3,True,2,2,2
+synth_filled_v2,pdf/447_vendedora_gustavo_barbosa_nascimen_designer_banner.pdf,Gustavo Barbosa Nascimento,1,,Gustavo Barbosa Nascimento,1,True,1,1,1
+synth_filled_v2,pdf/448_tecnica_em_enfermagem_amanda_mendes_nascimento_plain_left_gutter.pdf,Amanda Mendes Nascimento,1,,Amanda Mendes Nascimento,2,True,1,0,0
+synth_filled_v2,pdf/449_enfermeira_beatriz_araujo_martins_plain_single.pdf,Beatriz Araújo Martins,3,,Beatriz Araújo Martins,3,True,3,2,3
+synth_filled_v2,pdf/450_desenvolvedor_backend_bruna_rodrigues_martins_designer_outlined_box.pdf,Bruna Rodrigues Martins,2,,Bruna Rodrigues Martins,2,True,2,1,0
+synth_filled_v2,pdf/451_atendente_de_call_cent_lucas_cavalcante_martins_designer_bracket_frame.pdf,Lucas Cavalcante Martins,2,,Lucas Cavalcante,2,True,2,1,2
+synth_filled_v2,pdf/452_operador_de_caixa_pedro_teixeira_teixeira_designer_bracket_frame.pdf,Pedro Teixeira Teixeira,3,,Pedro Teixeira Te,3,True,3,2,3
+synth_filled_v2,pdf/453_balconista_de_farmacia_helena_nascimento_nascim_designer_outlined_box.pdf,Helena Nascimento Nascimento,3,,Helena Nascimento,3,True,3,2,3
+synth_filled_v2,pdf/454_enfermeira_renata_nogueira_almeida_designer_outlined_box.pdf,Renata Nogueira Almeida,2,,Renata Nogueira Almeida,2,True,2,2,2
+synth_filled_v2,pdf/455_gerente_de_loja_mateus_oliveira_oliveira_plain_single.pdf,Mateus Oliveira Oliveira,2,,Mateus Oliveira Oliveira,2,True,2,2,2
+synth_filled_v2,pdf/456_tecnica_em_enfermagem_beatriz_souza_martins_designer_bracket_frame.pdf,Beatriz Souza Martins,3,,Beatriz Souza Martins,3,True,3,1,0
+synth_filled_v2,pdf/457_recepcionista_de_clini_mateus_araujo_mendes_plain_single.pdf,Mateus Araújo Mendes,2,,Mateus Araújo Mendes,2,True,2,1,2
+synth_filled_v2,pdf/458_auxiliar_de_recursos_h_lucas_vieira_cardoso_concurso.pdf,Lucas Vieira Cardoso,2,,Lucas Vieira Cardoso,2,True,2,0,2
+synth_filled_v2,pdf/459_enfermeiro_beatriz_nogueira_cardoso_designer_color_boxes.pdf,Beatriz Nogueira Cardoso,2,,Nogueira Cardoso,2,True,2,1,2
+synth_filled_v2,pdf/460_repositor(a)_de_loja_sophia_gomes_pinto_sidebar_contact_right.pdf,Sophia Gomes Pinto,3,,Sophia Gomes Pinto,3,True,3,2,0
+synth_filled_v2,pdf/461_enfermeiro_assistencia_lucas_nascimento_teixeir_plain_left_gutter.pdf,Lucas Nascimento Teixeira,3,,Lucas Nascimento Teixeira,4,True,3,2,3
+synth_filled_v2,pdf/462_desenvolvedor_backend_igor_moreira_macedo_sidebar_contact_left.pdf,Igor Moreira Macedo,3,,Igor Moreira Macedo,3,True,3,3,0
+synth_filled_v2,pdf/463_estoquista_juliana_teixeira_nascime_designer_banner.pdf,Juliana Teixeira Nascimento,2,,Juliana Teixeira Nascimen,2,True,2,2,2
+synth_filled_v2,pdf/464_auxiliar_de_reposicao_renata_carvalho_fernande_designer_centered_rule.pdf,Renata Carvalho Fernandes,2,,Renata Carvalho Fe,2,True,2,1,2
+synth_filled_v2,pdf/465_auxiliar_de_acougue_bruna_araujo_monteiro_designer_centered_rule.pdf,Bruna Araújo Monteiro,3,,Bruna Araújo Mo,3,True,3,2,3
+synth_filled_v2,pdf/466_operador_de_sac_gabriela_nascimento_viei_plain_single.pdf,Gabriela Nascimento Vieira,2,,Gabriela Nascimento Vieira,2,True,2,1,2
+synth_filled_v2,pdf/467_enfermeiro_assistencia_carolina_teixeira_ribeir_sidebar_left.pdf,Carolina Teixeira Ribeiro,2,,Carolina Teixeira,2,True,2,2,2
+synth_filled_v2,pdf/468_tecnica_em_enfermagem_debora_pinto_cardoso_designer_monogram.pdf,Débora Pinto Cardoso,2,,Débora Pinto Cardoso,2,True,2,1,0
+synth_filled_v2,pdf/469_auxiliar_de_limpeza_renata_freitas_cardoso_sidebar_contact_right.pdf,Renata Freitas Cardoso,1,,Renata Freitas Cardoso,1,True,1,1,1
+synth_filled_v2,pdf/470_assistente_administrat_thiago_pinto_costa_sidebar_contact_right.pdf,Thiago Pinto Costa,1,,Thiago Pinto Costa,1,True,1,1,1
+synth_filled_v2,pdf/471_vendedor_debora_rodrigues_freitas_sidebar_right.pdf,Débora Rodrigues Freitas,3,,Captaçãoefidelizaçãodeclientesvia Whats App,3,False,3,3,3
+synth_filled_v2,pdf/472_gerente_de_loja_mariana_monteiro_freitas_sidebar_left.pdf,Mariana Monteiro Freitas,2,,Mariana Monteiro,1,True,1,1,0
+synth_filled_v2,pdf/473_consultor_de_vendas_bruno_pereira_mendes_plain_single.pdf,Bruno Pereira Mendes,3,,Bruno Pereira Mendes,3,True,3,3,3
+synth_filled_v2,pdf/474_gerente_de_filial_felipe_fernandes_pereira_designer_banner.pdf,Felipe Fernandes Pereira,1,,Felipe Fernandes Pereira,1,True,1,0,1
+synth_filled_v2,pdf/475_recepcionista_mariana_martins_ribeiro_sidebar_right.pdf,Mariana Martins Ribeiro,2,,Mariana Martins,2,True,2,0,1
+synth_filled_v2,pdf/476_operador_de_sac_lucas_correia_mendes_plain_left_gutter.pdf,Lucas Correia Mendes,3,,Lucas Correia Mendes,4,True,3,2,1
+synth_filled_v2,pdf/477_repositor_de_mercadori_caio_nascimento_moreira_sidebar_left.pdf,Caio Nascimento Moreira,2,,Caio Nascime,2,True,2,2,2
+synth_filled_v2,pdf/478_estoquista_davi_almeida_barbosa_concurso.pdf,Davi Almeida Barbosa,3,,Davi Almei da Barbosa,3,False,3,2,3
+synth_filled_v2,pdf/479_consultor_de_vendas_tatiane_nogueira_freitas_plain_single.pdf,Tatiane Nogueira Freitas,3,,Tatiane Nogueira Freitas,3,True,3,3,3
+synth_filled_v2,pdf/480_auxiliar_administrativ_ana_santos_pinto_plain_single.pdf,Ana Santos Pinto,3,,Ana Santos Pinto,3,True,3,3,3
+synth_filled_v2,pdf/481_atendente_de_recepcao_helena_silva_macedo_plain_left_gutter.pdf,Helena Silva Macedo,1,,Helena Silva Macedo,2,True,1,1,1
+synth_filled_v2,pdf/482_gerente_de_loja_daniel_monteiro_oliveira_sidebar_right.pdf,Daniel Monteiro Oliveira,3,,Bacharelado em Administração,3,False,3,3,3
+synth_filled_v2,pdf/483_repositor_de_mercadori_aline_gomes_fernandes_sidebar_contact_right.pdf,Aline Gomes Fernandes,2,,Aline Gomes Fernandes,2,True,2,1,2
+synth_filled_v2,pdf/484_desenvolvedor_backend_mateus_silva_moreira_designer_monogram.pdf,Mateus Silva Moreira,3,,Mateus Silva Moreira,3,True,3,3,0
+synth_filled_v2,pdf/485_repositor(a)_de_loja_leticia_costa_souza_sidebar_contact_left.pdf,Letícia Costa Souza,3,,Letícia Costa Souza,3,True,3,2,0
+synth_filled_v2,pdf/486_operadora_de_caixa_fernanda_gomes_fernandes_designer_outlined_box.pdf,Fernanda Gomes Fernandes,1,,Fernanda Gomes Fe,1,True,1,1,1
+synth_filled_v2,pdf/487_consultor_de_vendas_gustavo_lima_martins_designer_banner_diagonal.pdf,Gustavo Lima Martins,3,,Gustavo Lima Martins,3,True,3,3,3
+synth_filled_v2,pdf/488_atendente_de_telemarke_marcelo_cardoso_souza_designer_banner.pdf,Marcelo Cardoso Souza,2,,Marcelo Cardoso Souza,2,True,2,2,2
+synth_filled_v2,pdf/489_analista_financeiro_ju_amanda_rodrigues_lima_plain_left_gutter.pdf,Amanda Rodrigues Lima,3,,Amanda Rodrigues Lima,4,True,3,1,3
+synth_filled_v2,pdf/490_auxiliar_de_servicos_g_rafaela_pinto_silva_designer_accent_rule.pdf,Rafaela Pinto Silva,1,,Rafaela Pinto Silva,1,True,1,1,1
+synth_filled_v2,pdf/491_gerente_de_loja_renata_araujo_santos_designer_bracket_frame.pdf,Renata Araújo Santos,3,,Renata Araújo Santos,3,True,3,2,2
+synth_filled_v2,pdf/492_auxiliar_de_reposicao_caio_ferreira_vieira_plain_left_gutter.pdf,Caio Ferreira Vieira,3,,Caio Ferreira Vieira,4,True,3,2,3
+synth_filled_v2,pdf/493_consultor_de_vendas_debora_oliveira_souza_designer_plain.pdf,Débora Oliveira Souza,1,,Débora Oliveira Souza,1,True,1,1,1
+synth_filled_v2,pdf/494_operador_de_caixa_fernanda_cavalcante_mend_designer_banner_diagonal.pdf,Fernanda Cavalcante Mendes,2,,Fernanda Cavalcante Mendes,2,True,2,1,2
+synth_filled_v2,pdf/495_operador_de_caixa_rafaela_lima_rodrigues_designer_color_boxes.pdf,Rafaela Lima Rodrigues,1,,Lima Rodrigues,1,True,1,0,1
+synth_filled_v2,pdf/496_assistente_de_rh_vitoria_nascimento_santo_sidebar_contact_right.pdf,Vitória Nascimento Santos,3,,Vitória Nascimento Santos,3,True,3,2,3
+synth_filled_v2,pdf/497_acougueiro_andre_ferreira_oliveira_concurso.pdf,André Ferreira Oliveira,1,,André Ferreira Oliveira,1,True,1,1,1
+synth_filled_v2,pdf/498_assistente_de_rh_bruna_correia_silva_designer_plain.pdf,Bruna Correia Silva,1,,Bruna Correia Sil,1,True,1,0,1
+synth_filled_v2,pdf/499_enfermeira_eduardo_carvalho_freitas_designer_color_boxes.pdf,Eduardo Carvalho Freitas,1,,Carvalho Freitas,1,True,1,1,1
+synth_entrylabel,000_amanda-moreira-almeida.docx,Amanda Moreira Almeida,3,,Amanda Moreira Almeida,3,True,3,3,3
+synth_entrylabel,001_amanda-nogueira-correia.docx,Amanda Nogueira Correia,2,,Amanda Nogueira Correia,2,True,2,2,2
+synth_entrylabel,002_caio-silva-freitas.docx,Caio Silva Freitas,2,,Caio Silva Freitas,2,True,2,2,2
+synth_entrylabel,003_mateus-macedo-carvalho.docx,Mateus Macedo Carvalho,3,,Mateus Macedo Carvalho,3,True,3,3,3
+synth_entrylabel,004_camila-almeida-monteiro.docx,Camila Almeida Monteiro,1,,Camila Almeida Monteiro,1,True,1,1,1
+synth_entrylabel,005_letícia-nascimento-santos.docx,Letícia Nascimento Santos,1,,Letícia Nascimento Santos,1,True,1,1,1
+synth_entrylabel,006_maria-araújo-silva.docx,Maria Araújo Silva,1,,Maria Araújo Silva,1,True,1,1,1
+synth_entrylabel,007_vinícius-ferreira-cavalcante.docx,Vinícius Ferreira Cavalcante,2,,Vinícius Ferreira Cavalcante,2,True,2,1,2
+synth_entrylabel,008_igor-rodrigues-freitas.docx,Igor Rodrigues Freitas,3,,Igor Rodrigues Freitas,3,True,3,3,3
+synth_entrylabel,009_tatiane-araújo-fernandes.docx,Tatiane Araújo Fernandes,1,,Tatiane Araújo Fernandes,1,True,1,1,1
+synth_entrylabel,010_mateus-cardoso-mendes.docx,Mateus Cardoso Mendes,3,,Mateus Cardoso Mendes,3,True,3,3,3
+synth_entrylabel,011_vinícius-mendes-teixeira.docx,Vinícius Mendes Teixeira,2,,Vinícius Mendes Teixeira,2,True,2,2,2
+synth_entrylabel,012_aline-freitas-fernandes.docx,Aline Freitas Fernandes,3,,Aline Freitas Fernandes,3,True,3,3,3
+synth_entrylabel,013_pedro-monteiro-freitas.docx,Pedro Monteiro Freitas,2,,Pedro Monteiro Freitas,2,True,2,1,2
+synth_entrylabel,014_fernanda-ferreira-teixeira.docx,Fernanda Ferreira Teixeira,1,,Fernanda Ferreira Teixeira,1,True,1,1,1
+synth_entrylabel,015_renata-pereira-cardoso.docx,Renata Pereira Cardoso,2,,Renata Pereira Cardoso,2,True,2,2,2
+synth_entrylabel,016_beatriz-nogueira-carvalho.docx,Beatriz Nogueira Carvalho,1,,Beatriz Nogueira Carvalho,1,True,1,1,1
+synth_entrylabel,017_andré-pereira-teixeira.docx,André Pereira Teixeira,1,,André Pereira Teixeira,1,True,1,1,1
+synth_entrylabel,018_débora-lima-cardoso.docx,Débora Lima Cardoso,3,,Débora Lima Cardoso,3,True,3,2,3
+synth_entrylabel,019_thiago-teixeira-nogueira.docx,Thiago Teixeira Nogueira,1,,Thiago Teixeira Nogueira,1,True,1,0,1
+synth_entrylabel,020_maria-pereira-araújo.docx,Maria Pereira Araújo,3,,Maria Pereira Araújo,3,True,3,2,3
+synth_entrylabel,021_vinícius-cardoso-souza.docx,Vinícius Cardoso Souza,3,,Vinícius Cardoso Souza,3,True,3,3,3
+synth_entrylabel,022_thiago-cardoso-teixeira.docx,Thiago Cardoso Teixeira,3,,Thiago Cardoso Teixeira,3,True,3,2,3
+synth_entrylabel,023_bruna-moreira-silva.docx,Bruna Moreira Silva,1,,Bruna Moreira Silva,1,True,1,1,1
+synth_entrylabel,024_rodrigo-lima-pinto.docx,Rodrigo Lima Pinto,1,,Rodrigo Lima Pinto,1,True,1,1,1
+synth_entrylabel,025_gabriel-fernandes-oliveira.docx,Gabriel Fernandes Oliveira,3,,Gabriel Fernandes Oliveira,3,True,3,3,3
+synth_entrylabel,026_daniel-mendes-gomes.docx,Daniel Mendes Gomes,3,,Daniel Mendes Gomes,3,True,3,3,3
+synth_entrylabel,027_sophia-nascimento-silva.docx,Sophia Nascimento Silva,1,,Sophia Nascimento Silva,1,True,1,1,1
+synth_entrylabel,028_eduardo-pereira-gomes.docx,Eduardo Pereira Gomes,3,,Eduardo Pereira Gomes,3,True,3,3,3
+synth_entrylabel,029_vitória-moreira-silva.docx,Vitória Moreira Silva,1,,Vitória Moreira Silva,1,True,1,1,1
+synth_entrylabel,030_ana-macedo-santos.docx,Ana Macedo Santos,1,,Ana Macedo Santos,1,True,1,1,1
+synth_entrylabel,031_maria-oliveira-silva.docx,Maria Oliveira Silva,2,,Maria Oliveira Silva,2,True,2,2,2
+synth_entrylabel,032_henrique-costa-gomes.docx,Henrique Costa Gomes,2,,Henrique Costa Gomes,2,True,2,1,2
+synth_entrylabel,033_joão-silva-santos.docx,João Silva Santos,3,,João Silva Santos,3,True,3,2,3
+synth_entrylabel,034_murilo-macedo-barbosa.docx,Murilo Macedo Barbosa,2,,Murilo Macedo Barbosa,2,True,2,1,2
+synth_entrylabel,035_thiago-araújo-pinto.docx,Thiago Araújo Pinto,3,,Thiago Araújo Pinto,3,True,3,3,3
+synth_entrylabel,036_eduardo-nascimento-vieira.docx,Eduardo Nascimento Vieira,2,,Eduardo Nascimento Vieira,2,True,2,2,2
+synth_entrylabel,037_priscila-nascimento-freitas.docx,Priscila Nascimento Freitas,1,,Priscila Nascimento Freitas,1,True,1,1,1
+synth_entrylabel,038_carolina-macedo-macedo.docx,Carolina Macedo Macedo,2,,Carolina Macedo Macedo,2,True,2,2,2
+synth_entrylabel,039_mariana-vieira-rodrigues.docx,Mariana Vieira Rodrigues,3,,Mariana Vieira Rodrigues,3,True,3,3,3
+synth_entrylabel,040_isabela-santos-pereira.docx,Isabela Santos Pereira,2,,Isabela Santos Pereira,2,True,2,2,2
+synth_entrylabel,041_lucas-macedo-oliveira.docx,Lucas Macedo Oliveira,1,,Lucas Macedo Oliveira,1,True,1,1,1
+synth_entrylabel,042_pedro-nogueira-gomes.docx,Pedro Nogueira Gomes,2,,Pedro Nogueira Gomes,2,True,2,1,2
+synth_entrylabel,043_mariana-carvalho-martins.docx,Mariana Carvalho Martins,3,,Mariana Carvalho Martins,3,True,3,2,3
+synth_entrylabel,044_rafael-barbosa-carvalho.docx,Rafael Barbosa Carvalho,3,,Rafael Barbosa Carvalho,3,True,3,2,3
+synth_entrylabel,045_vitória-rodrigues-martins.docx,Vitória Rodrigues Martins,1,,Vitória Rodrigues Martins,1,True,1,1,1
+synth_entrylabel,046_ana-barbosa-pinto.docx,Ana Barbosa Pinto,1,,Ana Barbosa Pinto,1,True,1,1,1
+synth_entrylabel,047_beatriz-mendes-cardoso.docx,Beatriz Mendes Cardoso,1,,Beatriz Mendes Cardoso,1,True,1,0,1
+synth_entrylabel,048_rodrigo-almeida-costa.docx,Rodrigo Almeida Costa,3,,Rodrigo Almeida Costa,3,True,3,2,3
+synth_entrylabel,049_enzo-macedo-cardoso.docx,Enzo Macedo Cardoso,2,,Enzo Macedo Cardoso,2,True,2,2,2
+synth_entrylabel,050_otávio-oliveira-pereira.docx,Otávio Oliveira Pereira,3,,Otávio Oliveira Pereira,3,True,3,3,3
+synth_entrylabel,051_vinícius-freitas-lima.docx,Vinícius Freitas Lima,3,,Vinícius Freitas Lima,3,True,3,3,3
+synth_entrylabel,052_otávio-araújo-correia.docx,Otávio Araújo Correia,1,,Otávio Araújo Correia,1,True,1,0,1
+synth_entrylabel,053_murilo-correia-nascimento.docx,Murilo Correia Nascimento,1,,Murilo Correia Nascimento,1,True,1,1,1
+synth_entrylabel,054_sophia-cardoso-gomes.docx,Sophia Cardoso Gomes,1,,Sophia Cardoso Gomes,1,True,1,1,1
+synth_entrylabel,055_thiago-mendes-martins.docx,Thiago Mendes Martins,2,,Thiago Mendes Martins,2,True,2,1,2
+synth_entrylabel,056_gabriel-cardoso-carvalho.docx,Gabriel Cardoso Carvalho,1,,Gabriel Cardoso Carvalho,1,True,1,1,1
+synth_entrylabel,057_eduardo-santos-barbosa.docx,Eduardo Santos Barbosa,2,,Eduardo Santos Barbosa,2,True,2,2,2
+synth_entrylabel,058_beatriz-freitas-almeida.docx,Beatriz Freitas Almeida,3,,Beatriz Freitas Almeida,3,True,3,3,3
+synth_entrylabel,059_murilo-rodrigues-rodrigues.docx,Murilo Rodrigues Rodrigues,1,,Murilo Rodrigues Rodrigues,1,True,1,1,1

@@ -10,6 +10,7 @@ rhia-ia/
 # Dados pessoais de CVs reais (textos extraídos e resultados por candidato)
 testes/galpao_llm_vs_app/
 testes/primeiros_10/
+testes/samples_vs_llm/sem_gabarito/
 testes/relatorio_cv_galpao*.json
 testes/relatorio_cv_galpao*.csv
 

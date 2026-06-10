@@ -73,6 +73,15 @@ def _carregar_pdf(caminho: Path) -> str:
 
 
 _RE_COLA_CAMELCASE = re.compile(r"(?<=[a-zà-öø-ü])(?=[A-ZÀ-ÖØ-Ü])")
+_RE_COLA_VIRGULA = re.compile(r",(?=[A-Za-zÀ-ü])")
+_RE_COLA_PARENTESE = re.compile(r"(?<=[\wà-ü])(?=\()")
+_RE_COLA_TRAVESSAO = re.compile(r"(?<=[^\s])([—–])(?=[^\s])")
+_RE_COLA_HIFEN = re.compile(r"(?<=[^\s\d])-(?=[^\s\d])")
+_RE_COLA_PREP = re.compile(
+    r"([a-zà-ü]{4,})(em|de|da|do|das|dos|ao|aos)(?=[A-ZÀ-Ö])"
+)
+# "Bar-\nbosa" -> "Barbosa": palavra hifenizada na quebra de linha
+_RE_HIFEN_QUEBRA = re.compile(r"(?<=[a-zà-ü])-\n(?=[a-zà-ü])")
 
 
 def _descolar_texto(texto: str) -> str:
@@ -83,14 +92,26 @@ def _descolar_texto(texto: str) -> str:
     sintoma é generalizado no documento, para não tocar em nomes legítimos
     como "JavaScript" em CVs normais.
     """
+    # glifos sem mapeamento unicode no PDF ("(cid:107)04/2021...")
+    texto = re.sub(r"\(cid:\d+\)", " ", texto)
     linhas = [l for l in texto.splitlines() if l.strip()]
     if not linhas:
         return texto
-    coladas = sum(1 for l in linhas if _RE_COLA_CAMELCASE.search(l))
-    if coladas / len(linhas) < 0.3:
+    coladas = sum(
+        1 for l in linhas
+        if _RE_COLA_CAMELCASE.search(l) or _RE_COLA_VIRGULA.search(l)
+        or _RE_COLA_TRAVESSAO.search(l) or _RE_COLA_HIFEN.search(l)
+        or _RE_COLA_PREP.search(l)
+    )
+    if coladas / len(linhas) < 0.12:
         return texto
+    texto = _RE_HIFEN_QUEBRA.sub("", texto)
+    texto = _RE_COLA_TRAVESSAO.sub(r" \1 ", texto)
+    texto = _RE_COLA_HIFEN.sub(" - ", texto)
+    texto = _RE_COLA_PREP.sub(r"\1 \2 ", texto)
     texto = _RE_COLA_CAMELCASE.sub(" ", texto)
-    return re.sub(r",(?=[A-Za-zÀ-ü])", ", ", texto)
+    texto = _RE_COLA_PARENTESE.sub(" ", texto)
+    return _RE_COLA_VIRGULA.sub(", ", texto)
 
 
 def _texto_pagina(pagina) -> str:
@@ -102,16 +123,23 @@ def _texto_pagina(pagina) -> str:
     """
     texto_simples = (pagina.extract_text() or "").strip()
     corte = _detectar_corte_colunas(pagina)
-    if corte is None:
-        return texto_simples
-    x0, topo, x1, base = pagina.bbox
-    try:
-        esquerda = pagina.crop((x0, topo, corte, base)).extract_text() or ""
-        direita = pagina.crop((corte, topo, x1, base)).extract_text() or ""
-    except Exception:  # bbox inválida em PDFs malformados
-        return texto_simples
-    combinado = "\n\n".join(p for p in (esquerda.strip(), direita.strip()) if p)
-    return combinado or texto_simples
+    if corte is not None:
+        x0, topo, x1, base = pagina.bbox
+        try:
+            esquerda = pagina.crop((x0, topo, corte, base)).extract_text() or ""
+            direita = pagina.crop((corte, topo, x1, base)).extract_text() or ""
+        except Exception:  # bbox inválida em PDFs malformados
+            return texto_simples
+        combinado = "\n\n".join(p for p in (esquerda.strip(), direita.strip()) if p)
+        return combinado or texto_simples
+    # calha imperfeita (header/títulos cruzam o meio): detecta pela
+    # consistência dos espaços horizontais dentro das linhas
+    corte = _detectar_corte_por_gaps(pagina)
+    if corte is not None:
+        texto = _texto_colunas_por_palavras(pagina, corte)
+        if texto:
+            return texto
+    return texto_simples
 
 
 def _detectar_corte_colunas(pagina) -> float | None:
@@ -147,6 +175,74 @@ def _detectar_corte_colunas(pagina) -> float | None:
             melhor = x
             melhor_equilibrio = equilibrio
     return melhor
+
+
+def _detectar_corte_por_gaps(pagina) -> float | None:
+    """Detecta duas colunas mesmo quando títulos/header cruzam o meio.
+
+    Varre o terço central procurando o x com a MENOR quantidade de palavras
+    atravessando (a calha). Aceita poucas travessias (header em largura
+    total), diferente do detector estrito que exige calha limpa.
+    """
+    try:
+        palavras = pagina.extract_words() or []
+    except Exception:
+        return None
+    if len(palavras) < 60:
+        return None
+    largura = float(pagina.width)
+
+    melhor_cov, melhor_x = None, None
+    for x in range(int(largura * 0.3), int(largura * 0.7), 3):
+        cov = sum(1 for w in palavras if w["x0"] < x - 1 and w["x1"] > x + 1)
+        if melhor_cov is None or cov < melhor_cov:
+            melhor_cov, melhor_x = cov, x
+    n_linhas = len({int(w["top"] // 8) for w in palavras})
+    if melhor_cov > max(4, n_linhas * 0.08):
+        return None
+    esquerda = sum(1 for w in palavras if w["x1"] <= melhor_x)
+    direita = sum(1 for w in palavras if w["x0"] >= melhor_x)
+    if min(esquerda, direita) < 15:
+        return None
+    return float(melhor_x)
+
+
+def _texto_colunas_por_palavras(pagina, corte: float) -> str:
+    """Reconstrói o texto separando palavras à esquerda/direita do corte.
+
+    Palavras que cruzam o corte (header em largura total) ficam na coluna em
+    que têm maior área. Cada coluna é remontada linha a linha pelo eixo y.
+    """
+    try:
+        palavras = pagina.extract_words() or []
+    except Exception:
+        return ""
+    # topo da página (nome/contato) costuma ocupar a largura toda: mantém
+    # como bloco próprio para não partir o nome entre as colunas
+    limite_header = float(pagina.height) * 0.12
+    header, esquerda, direita = [], [], []
+    for w in palavras:
+        if w["top"] < limite_header:
+            header.append(w)
+            continue
+        meio = (w["x0"] + w["x1"]) / 2
+        (esquerda if meio < corte else direita).append(w)
+
+    def montar(coluna) -> str:
+        coluna.sort(key=lambda w: (int(w["top"] // 4), w["x0"]))
+        linhas, atual, topo = [], [], None
+        for w in coluna:
+            if topo is not None and w["top"] - topo > 4:
+                linhas.append(" ".join(atual))
+                atual = []
+            atual.append(w["text"])
+            topo = w["top"]
+        if atual:
+            linhas.append(" ".join(atual))
+        return "\n".join(linhas)
+
+    partes = [montar(c) for c in (header, esquerda, direita) if c]
+    return "\n\n".join(p for p in partes if p.strip())
 
 
 def _ocr_pdf(caminho: Path) -> str:
@@ -286,6 +382,30 @@ def _ocr_imagem_arquivo(caminho: Path) -> str:
 
 def _ocr_imagem_pil(imagem) -> str:
     import pytesseract
+    from PIL import Image
 
     # por+eng cobre a maioria dos CVs brasileiros com termos técnicos em inglês
-    return pytesseract.image_to_string(imagem, lang="por+eng")
+    texto = pytesseract.image_to_string(imagem, lang="por+eng")
+    if imagem.width >= 1600:
+        return texto
+
+    # imagem pequena: upscale 2x (e variante em tons de cinza) recuperam
+    # datas/texto fino, mas podem piorar outros trechos (ex.: texto claro em
+    # banners coloridos). Faz as passadas e fica com a de melhor qualidade.
+    from PIL import ImageOps
+
+    maior = imagem.resize((imagem.width * 2, imagem.height * 2), Image.LANCZOS)
+    cinza = ImageOps.autocontrast(maior.convert("L"))
+    candidatos = [
+        texto,
+        pytesseract.image_to_string(maior, lang="por+eng"),
+        pytesseract.image_to_string(cinza, lang="por+eng"),
+    ]
+    return max(candidatos, key=_qualidade_ocr)
+
+
+def _qualidade_ocr(texto: str) -> tuple[int, int]:
+    """Pontua um resultado de OCR: datas legíveis pesam mais que volume."""
+    anos = len(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", texto))
+    palavras = sum(1 for p in texto.split() if sum(c.isalpha() for c in p) >= 3)
+    return (anos, palavras)

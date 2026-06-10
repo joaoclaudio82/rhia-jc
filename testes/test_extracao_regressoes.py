@@ -327,3 +327,125 @@ def test_cv_academico_ingles_ano_isolado_e_cargo_abaixo():
     assert any(i.idioma == "Portuguese" for i in cv.idiomas)
     # ano da formacao nao vira experiencia
     assert len(cv.formacoes) == 1
+
+
+def test_formulario_concurso_admissao_empregador():
+    texto = """
+    ANEXO IV
+    MODELO DE CURRICULO - PROCESSO SELETIVO
+    DADOS PESSOAIS
+    NOME COMPLETO Renata Nogueira Nogueira
+    CIDADE/UF Porto Alegre/RS
+    EXPERIENCIA PROFISSIONAL
+    ADMISSAO 2021-12
+    DESLIGAMENTO atual
+    EMPREGADOR Mercado Envios
+    CARGO/FUNCAO Conferente
+    ATIVIDADES Apoio em inventarios ciclicos.
+    ADMISSAO 2017-02
+    DESLIGAMENTO 2021-02
+    EMPREGADOR JSL
+    CARGO/FUNCAO Conferente Junior
+    ATIVIDADES Separacao de pedidos por coletor.
+    """
+
+    cv = extrair_curriculo(texto)
+
+    assert cv.nome_completo == "Renata Nogueira Nogueira"
+    assert len(cv.experiencias) == 2
+    assert cv.experiencias[0].empresa == "Mercado Envios"
+    assert cv.experiencias[0].cargo == "Conferente"
+    assert cv.experiencias[0].inicio == "2021-12"
+    assert cv.experiencias[0].fim == "atual"
+    assert cv.experiencias[1].empresa == "JSL"
+
+
+
+def test_lattes_vinculos_institucionais():
+    texto = """
+    Filipe Maciel de Moura
+    Endereço para acessar este CV: http://lattes.cnpq.br/123
+    Atuação Profissional
+    Universidade Estadual do Ceará, UECE, Brasil.
+    Vínculo institucional
+    2018 - Atual Vínculo: Doutorando em Geografia, Enquadramento Funcional: Pesquisador de Doutorado,
+    Carga horária: 40, Regime: Dedicação exclusiva.
+    Vínculo institucional
+    2015 - 2017 Vínculo: Mestrando em Geografia, Enquadramento Funcional: Mestrando, Regime:
+    Dedicação exclusiva.
+    Companhia Hidro Elétrica do São Francisco, CHESF, Brasil.
+    Vínculo institucional
+    2012 - 2013 Vínculo: Estágio, Enquadramento Funcional: Estagiário, Carga horária: 30.
+    Produções
+    2020 Artigo sobre geoprocessamento. Revista X.
+    2019 Outro artigo. Revista Y.
+    2018 Mais um artigo. Revista Z.
+    """
+
+    cv = extrair_curriculo(texto)
+
+    assert len(cv.experiencias) == 3
+    assert cv.experiencias[0].cargo == "Pesquisador de Doutorado"
+    assert cv.experiencias[0].empresa == "Universidade Estadual do Ceará (UECE)"
+    assert cv.experiencias[0].fim == "atual"
+    assert cv.experiencias[2].empresa == "Companhia Hidro Elétrica do São Francisco (CHESF)"
+def test_layout_periodo_cargo_empresa_voluntariado():
+    # Padrao kickresume (078): periodo / cargo curto / empresa na linha seguinte
+    texto = """
+    Daniel Costa Nogueira
+    EXPERIENCIA
+    2020 - ATUAL
+    Tutor Freelancer
+    Autonomo - Belem, PA
+    - Tutoria em Portugues e Matematica
+    VOLUNTARIADO
+    2021 - ATUAL BELEM, PA
+    Embaixador
+    CAPS - Centro de Atencao Psicossocial
+      - Representou a instituicao em campanhas
+    """
+
+    cv = extrair_curriculo(texto)
+
+    assert len(cv.experiencias) == 2
+    assert cv.experiencias[0].cargo == "Tutor Freelancer"
+    assert cv.experiencias[0].empresa == "Autonomo"
+    assert cv.experiencias[1].cargo == "Embaixador"
+    assert "CAPS" in (cv.experiencias[1].empresa or "")
+
+
+def test_cargo_empresa_mesma_linha_colada_kickresume():
+    # Padrao kickresume (084): cargo e empresa colados na mesma linha
+    texto = """
+    Carolina Teixeira Martins
+    EXPERIENCIA DE TRABALHO
+    JAN.2021 - ATUAL MACEIO, AL
+    Especialistaem Suporteao Cliente Digital - i Food
+    Responsabilidades principais:
+    - Atender clientes via chat
+    07/2018 - 01/2021 RECIFE, PE
+    Agente de Suporte ao Cliente - Mercado Livre
+    """
+
+    cv = extrair_curriculo(texto)
+
+    assert len(cv.experiencias) == 2
+    assert cv.experiencias[0].cargo == "Especialista em Suporte ao Cliente Digital"
+    assert cv.experiencias[0].empresa == "iFood"
+    assert cv.experiencias[1].cargo == "Agente de Suporte ao Cliente"
+    assert cv.experiencias[1].empresa == "Mercado Livre"
+
+def test_normalizar_empresa_colada_kickresume():
+    from leitor_cv.extracao import _normalizar_empresa
+
+    assert _normalizar_empresa("Programa PIBIC — Realização Acadêmicae Inclusão") == (
+        "Programa PIBIC — Realização Acadêmica e Inclusão"
+    )
+    assert _normalizar_empresa("Labde Preconceitono Ambiente de Trabalho") == (
+        "Lab de Preconceito no Ambiente de Trabalho"
+    )
+    assert _normalizar_empresa("i Food") == "iFood"
+    assert _normalizar_empresa("Merca do Livre") == "Mercado Livre"
+    assert _normalizar_empresa("Racismo Estruturalna América Latina") == (
+        "Racismo Estrutural na América Latina"
+    )
