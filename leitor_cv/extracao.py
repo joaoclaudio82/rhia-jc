@@ -183,7 +183,26 @@ _CABECALHOS_INTERNOS = frozenset((
     "responsabilidadesprincipais", "perfil",
 ))
 _RE_COMPLEMENTO_EMPRESA = re.compile(r"(?i)^grupo de \d+ empresas?$")
-_FRAGMENTOS_EMPRESA = frozenset(("hora", "ital", "mail", "chat"))
+_FRAGMENTOS_EMPRESA = frozenset(("hora", "ital", "mail", "chat", "ce", "nascimento", "identidade"))
+_RE_CPF = re.compile(r"\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b")
+_RE_LATTES_LIXO = re.compile(
+    r"(?i)(?:curriculo lattes|pagina gerada pelo sistema|producao bibliografica|"
+    r"trabalhos publicados|capitulos de livros|participacao em banca|organizacao de evento|"
+    r"apresentacao de trabalho|areas de atuacao\s*\d)"
+)
+_MARCADORES_FIM_LATTES = re.compile(
+    r"(?i)(?:^|\n)\s*(?:Produ[cç][aã]o bibliogr[aá]fica|Produ[cç][aã]o t[eé]cnica|"
+    r"Projetos de pesquisa|Idiomas e|Idiomas\b|Eventos\b|Bancas\b|Orienta[cç][õo]es\b|"
+    r"Forma[cç][aã]o [Aa]cad[eê]mica|P[aá]gina gerada pelo sistema)\b"
+)
+_PALAVRAS_FORMACAO_ANCORA = (
+    "mestrado", "doutorado", "graduacao", "bacharelado", "licenciatura",
+    "extensao universitaria", "curso de", "curso tecnico", "especializacao",
+    "pos-graduacao", "mba", "tecnologo", "formacao academica", "programa de",
+    "conclusao:", "carga horaria", "graduacao em", "mestrado em", "doutorado em",
+)
+_MAX_FORMACOES = 25
+_MAX_CAMPO_EXP = 120
 _NIVEIS_FORMACAO = (
     ("doutorado", "doutorado"), ("phd", "doutorado"),
     ("mestrado", "mestrado"), ("mba", "especialização"),
@@ -207,12 +226,155 @@ def _tem_nivel_idioma(texto: str) -> bool:
     return any(re.search(rf"(?<![a-z0-9]){re.escape(p)}", n) for p in _NIVEIS_IDIOMA)
 
 
+def _detectar_template(texto: str) -> str:
+    """Classifica o CV para escolher a estratégia de extração."""
+    n = _norm(texto[:12000])
+    texto_plano = n.replace("\n", " ")
+    vinculos = len(re.findall(r"vinculo\s+institucional", texto_plano))
+    if (
+        "curriculo lattes" in n
+        or "lattes.cnpq.br" in texto.lower()[:12000]
+        or (
+            re.search(r"atuacao\s+profissional", n)
+            and vinculos >= 4
+        )
+    ):
+        return "lattes"
+    bullets = texto.count("●") + texto.count("•")
+    if bullets >= 5 or ("formacao academica" in n and bullets >= 2):
+        return "academico"
+    return "tradicional"
+
+
+def _parece_linha_formacao(linha: str) -> bool:
+    """Formação acadêmica não deve virar âncora de experiência."""
+    if not linha or len(linha) > 200:
+        return len(linha) > 200
+    n = _norm(linha)
+    if re.search(
+        r"\b(mestrando|doutorando|estagiario|pesquisador|professor|docente|bolsista|embaixador)\b",
+        n,
+    ):
+        return False
+    for p in _PALAVRAS_FORMACAO_ANCORA:
+        if not re.search(rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", n):
+            continue
+        if p in ("doutorado", "mestrado", "graduacao", "bacharelado", "licenciatura", "especializacao"):
+            if re.search(rf"\b{p}\s+em\b", n):
+                return True
+            continue
+        return True
+    return bool(_RE_TITULO_CURSO.match(linha.strip()))
+
+
+def _parece_dado_pessoal(texto: str | None) -> bool:
+    if not texto:
+        return False
+    if _RE_CPF.search(texto):
+        return True
+    n = _norm(texto)
+    if n in _FRAGMENTOS_EMPRESA:
+        return True
+    return any(
+        x in n
+        for x in (
+            "cpf", "carteira de identidade", "nascimento", "identidade",
+            "endereco e contatos", "ssp -", "pagina gerada pelo sistema",
+            "curriculo lattes apresentacao",
+        )
+    )
+
+
+def _explodir_paragrafos_longos(linhas: list[str]) -> list[str]:
+    """Quebra parágrafos colados (CVs acadêmicos) em linhas menores."""
+    saida: list[str] = []
+    for linha in linhas:
+        if len(linha) <= 180:
+            saida.append(linha)
+            continue
+        partes = re.split(
+            r"(?=\s*[●•]\s+|\bPer[ií]odo:\s*|\bPARTICIPA[CÇ][AÃ]O\b|\bEXPERI[EÊ]NCIA\b)",
+            linha,
+            flags=re.I,
+        )
+        for parte in partes:
+            parte = parte.strip()
+            if parte:
+                saida.append(parte)
+    return saida
+
+
+def _agrupar_bullets_formacao(linhas: list[str]) -> list[str]:
+    """Agrupa itens ● em blocos únicos (título + instituição + ano)."""
+    saida: list[str] = []
+    buffer: list[str] = []
+    for linha in linhas:
+        stripped = linha.strip()
+        if re.match(r"^[●•\-*]\s+", stripped) or stripped.startswith("●"):
+            if buffer:
+                saida.append(" ".join(buffer))
+            buffer = [re.sub(r"^[●•\-*]\s+", "", stripped).strip()]
+        elif buffer and stripped and len(stripped) < 120 and not _chave_secao(stripped):
+            buffer.append(stripped)
+        else:
+            if buffer:
+                saida.append(" ".join(buffer))
+                buffer = []
+            saida.append(linha)
+    if buffer:
+        saida.append(" ".join(buffer))
+    return saida
+
+
+def _filtrar_experiencias_qualidade(experiencias: list[Experiencia]) -> list[Experiencia]:
+    """Pós-validação: remove ruído e deduplica."""
+    saida: list[Experiencia] = []
+    vistos: set[tuple] = set()
+    for exp in experiencias:
+        if not _experiencia_valida(exp):
+            continue
+        chave = (
+            _norm(exp.empresa or "")[:40],
+            _norm(exp.cargo or "")[:40],
+            exp.inicio,
+            exp.fim,
+        )
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        saida.append(exp)
+    return saida
+
+
+def _filtrar_formacoes_qualidade(formacoes: list[Formacao]) -> list[Formacao]:
+    """Limita superextração de formações e remove linhas sem nível/curso claro."""
+    saida: list[Formacao] = []
+    vistos: set[str] = set()
+    for f in formacoes:
+        if not (f.curso or f.instituicao):
+            continue
+        curso_n = _norm(f.curso or "")
+        if len(curso_n) < 8 and not f.nivel:
+            continue
+        if any(p in curso_n for p in ("participacao", "pesquisa de campo", "aprovada em")):
+            continue
+        chave = _norm(f"{f.curso}|{f.instituicao}|{f.ano_fim}")[:80]
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        saida.append(f)
+        if len(saida) >= _MAX_FORMACOES:
+            break
+    return saida
+
+
 # ----------------------------------------------------------------------
 # Função principal
 # ----------------------------------------------------------------------
 
 def extrair_curriculo(texto: str) -> Curriculo:
     """Converte o texto bruto de um CV em um objeto Curriculo validado."""
+    template = _detectar_template(texto)
     linhas = _limpar_linhas(texto)
     secoes = _segmentar_secoes(linhas)
     preambulo = secoes.get("preambulo", [])
@@ -225,10 +387,13 @@ def extrair_curriculo(texto: str) -> Curriculo:
     # Currículo Lattes tem estrutura própria ("Atuação Profissional" ->
     # "Vínculo institucional"); o caminho genérico superextrai (anos de
     # produção científica viram âncoras de experiência).
-    experiencias = _experiencias_lattes(texto)
+    experiencias: list[Experiencia] = []
+    if template == "lattes":
+        experiencias = _experiencias_lattes(texto)
     if not experiencias:
         experiencias = _extrair_experiencias(secoes.get("experiencias", []), ano_solto=True)
-        experiencias = _complementar_experiencias_perdidas(experiencias, secoes)
+        if template != "lattes":
+            experiencias = _complementar_experiencias_perdidas(experiencias, secoes)
     if not experiencias:
         # CVs sem título de experiência: o bloco pode vir "colado" em outra
         # seção (fim da formação, resumo etc.) sem novo cabeçalho.
@@ -258,7 +423,8 @@ def extrair_curriculo(texto: str) -> Curriculo:
             for chave, extraidas, resto in encontrados:
                 experiencias += extraidas
                 secoes[chave] = resto
-    linhas_formacao = secoes.get("formacoes", [])
+    linhas_formacao = _agrupar_bullets_formacao(secoes.get("formacoes", []))
+    experiencias = _filtrar_experiencias_qualidade(experiencias)
 
     if nome is None:
         nome = _nome_em_linhas(linhas[:80])
@@ -292,7 +458,7 @@ def extrair_curriculo(texto: str) -> Curriculo:
         titulo_profissional=titulo,
         resumo=_juntar(secoes.get("resumo", [])),
         contato=contato,
-        formacoes=_extrair_formacoes(linhas_formacao),
+        formacoes=_filtrar_formacoes_qualidade(_extrair_formacoes(linhas_formacao)),
         experiencias=experiencias,
         habilidades=_extrair_habilidades(secoes.get("habilidades", [])),
         idiomas=_extrair_idiomas(secoes.get("idiomas", [])),
@@ -315,7 +481,9 @@ def _limpar_linhas(texto: str) -> list[str]:
         if re.match(r"^#+\s*(página|pagina|texto extraído|texto extraido)", linha, re.I):
             continue
         linhas.append(linha)
-    return _explodir_tabelas(_juntar_periodos_quebrados(linhas))
+    linhas = _juntar_periodos_quebrados(linhas)
+    linhas = _explodir_paragrafos_longos(linhas)
+    return _explodir_tabelas(linhas)
 
 
 _RE_DATA_SOZINHA = re.compile(rf"^(?:{_DATA})$")
@@ -806,6 +974,8 @@ def _ancoras_experiencia(linhas: list[str], ano_solto: bool = False) -> list[tup
     for p, linha in enumerate(linhas):
         if linha.startswith("|"):
             continue
+        if _parece_linha_formacao(linha) or _parece_dado_pessoal(linha):
+            continue
         m = _RE_PERIODO.search(linha) or _RE_DESDE.search(linha)
         if m:
             antes = _limpar_rotulo(linha[: m.start()])
@@ -1152,56 +1322,72 @@ _RE_LATTES_INSTITUICAO = re.compile(
     r"(?P<nome>[A-ZÀ-Ü][\w&à-üÀ-Ü/.\- ]{3,90}), (?P<sigla>[A-ZÀ-Ü][A-ZÀ-Ü0-9./ \-]{1,20}),"
     r" (?P<pais>[A-ZÀ-Ü][a-zà-ü]+)\."
 )
-_RE_LATTES_VINCULO = re.compile(r"V[ií]nculo institucional")
+_RE_LATTES_VINCULO = re.compile(r"V[ií]nculo\s+institucional", re.I)
+_RE_LATTES_LISTA = re.compile(r"(?m)^\s*\d+\.\s+(.+)$")
 _RE_LATTES_PERIODO = re.compile(
     r"(?P<ini>(?:19|20)\d{2})\s*-\s*(?P<fim>(?:19|20)\d{2}|[Aa]tual)"
-    r"(?:\s*V[ií]nculo:\s*(?P<vinc>[^,.\n]*))?"
-    r"(?:[^\n]{0,80}?Enquadramento Funcional:\s*(?P<funcao>[^,.\n]*))?",
+    r"(?:\s*V[ií]nculo:\s*(?P<vinc>[^,\n]*))?"
+    r"(?:[^\n]{0,160}?[Ee]nquadramento\s+[Ff]uncional:\s*(?P<funcao>[^,\n]{3,90}))?",
     re.S,
 )
 
 
+def _normalizar_texto_lattes(texto: str) -> str:
+    """PDFs quebram 'Vínculo' e 'institucional' em linhas separadas."""
+    texto = re.sub(r"V[ií]nculo\s*\n\s*institucional", "Vínculo institucional", texto, flags=re.I)
+    texto = re.sub(r"[Ee]nquadramento\s+funcional", "Enquadramento funcional", texto)
+    return texto
+
+
+def _cortar_trecho_lattes(trecho: str) -> str:
+    m = _MARCADORES_FIM_LATTES.search(trecho)
+    return trecho[: m.start()] if m else trecho
+
+
+def _instituicao_lattes_antes(trecho: str, pos_vinculo: int) -> str | None:
+    antes = trecho[:pos_vinculo]
+    insts = list(_RE_LATTES_INSTITUICAO.finditer(antes))
+    if insts:
+        m = insts[-1]
+        return f"{m.group('nome').strip()} ({m.group('sigla')})"
+    itens = list(_RE_LATTES_LISTA.finditer(antes))
+    if itens:
+        return itens[-1].group(1).strip()
+    for linha in reversed(antes.splitlines()[-6:]):
+        linha = linha.strip()
+        if not linha or re.search(r"vinculo", linha, re.I):
+            continue
+        linha = re.sub(r"^\d+\.\s*", "", linha)
+        if len(linha) >= 5 and not _parece_linha_formacao(linha):
+            return linha
+    return None
+
+
 def _experiencias_lattes(texto: str) -> list[Experiencia]:
-    """Vínculos da seção "Atuação Profissional" de um currículo Lattes.
-
-    Formato fixo da plataforma: nome da instituição ("X, SIGLA, Brasil."),
-    seguido de blocos "Vínculo institucional" com período, vínculo e
-    enquadramento funcional. O pdfplumber duplica trechos em dumps de tabela,
-    então a varredura é por posição no texto, com deduplicação.
-    """
-    if len(_RE_LATTES_VINCULO.findall(texto)) < 2:
+    """Vínculos da seção "Atuação Profissional" de um currículo Lattes."""
+    texto = _normalizar_texto_lattes(texto)
+    if len(_RE_LATTES_VINCULO.findall(texto)) < 1:
         return []
-    inicio = texto.find("Atuação Profissional")
-    if inicio == -1:
+    m_sec = re.search(r"Atua[cç][aã]o\s+[Pp]rofissional", texto)
+    if not m_sec:
         return []
-    # não corta em seções seguintes: "Linhas de pesquisa", "Projetos" etc.
-    # aparecem como subseções dentro da própria Atuação Profissional, e o
-    # marcador "Vínculo institucional" já delimita o que interessa.
-    trecho = texto[inicio:]
+    trecho = _cortar_trecho_lattes(texto[m_sec.start():])
 
-    instituicoes = [
-        (m.start(), f"{m.group('nome').strip()} ({m.group('sigla')})")
-        for m in _RE_LATTES_INSTITUICAO.finditer(trecho)
-    ]
     experiencias: list[Experiencia] = []
     vistos: set[tuple] = set()
     for mv in _RE_LATTES_VINCULO.finditer(trecho):
-        m = _RE_LATTES_PERIODO.search(trecho, mv.end(), mv.end() + 400)
+        m = _RE_LATTES_PERIODO.search(trecho, mv.end(), mv.end() + 500)
         if not m:
             continue
-        empresa = None
-        for pos, nome_inst in instituicoes:
-            if pos > mv.start():
-                break
-            empresa = nome_inst
-        cargo = (m.group("funcao") or m.group("vinc") or "").strip(" -") or None
-        # dumps de tabela do pdfplumber duplicam vínculos com texto levemente
-        # diferente; deduplica por período + primeira palavra do cargo
+        empresa = _instituicao_lattes_antes(trecho, mv.start())
+        cargo = (m.group("funcao") or m.group("vinc") or "").strip(" -,") or None
+        if cargo:
+            cargo = re.sub(r"\s*,\s*Carga horária:.*$", "", cargo, flags=re.I).strip()
         chave = (
             m.group("ini"),
             m.group("fim").lower(),
-            # só os 6 primeiros caracteres: dumps truncam palavras ("Profess")
-            _norm(cargo.split()[0])[:6] if cargo else (empresa or "").lower()[:20],
+            _norm(cargo or "")[:20],
+            _norm(empresa or "")[:30],
         )
         if chave in vistos:
             continue
@@ -1212,7 +1398,7 @@ def _experiencias_lattes(texto: str) -> list[Experiencia]:
             inicio=m.group("ini"),
             fim="atual" if m.group("fim").lower() == "atual" else m.group("fim"),
         ))
-    return experiencias
+    return _filtrar_experiencias_qualidade(experiencias)
 
 
 _RE_FORM_ADMISSAO = re.compile(r"(?i)^admiss[aã]o\b\s*[:\-]?\s*(.*)$")
@@ -1547,9 +1733,19 @@ def _experiencia_valida(exp: Experiencia) -> bool:
     for campo in (exp.cargo, exp.empresa):
         if campo and _eh_cabecalho_interno(campo):
             return False
+        if campo and _parece_dado_pessoal(campo):
+            return False
+        if campo and campo is exp.empresa and _parece_linha_formacao(campo):
+            return False
+        if campo and _RE_LATTES_LIXO.search(campo):
+            return False
+        if campo and len(campo) > _MAX_CAMPO_EXP and not _tem_palavra_cargo(campo[:80]):
+            return False
     if exp.cargo and _norm(exp.cargo).startswith("perfil"):
         return False
     if exp.empresa and _norm(exp.empresa).startswith("perfil"):
+        return False
+    if exp.empresa and _norm(exp.empresa) in ("institucional", "curriculo lattes"):
         return False
     # fragmentos de bullet/OCR colados ("ital", "hora"), não siglas (JSL, C&A)
     if exp.empresa:
@@ -1560,7 +1756,18 @@ def _experiencia_valida(exp: Experiencia) -> bool:
             return False
         if re.search(r"\(\d{2}\)|\bru[aá]\b|@\w", emp_n):
             return False
+    if exp.cargo and _norm(exp.cargo).startswith(("disciplinas ministradas", "vinculo:")):
+        return False
     if exp.inicio and re.match(r"^\d{2}/\d{2}\s+\d{4}$", exp.inicio.strip()):
+        return False
+    # data de nascimento (dd/mm + ano 19xx) sem cargo real
+    if (
+        exp.inicio
+        and re.match(r"^\d{2}/\d{2}$", exp.inicio.strip())
+        and exp.fim
+        and re.match(r"^(19|20)\d{2}$", str(exp.fim).strip())
+        and not exp.cargo
+    ):
         return False
     return True
 
