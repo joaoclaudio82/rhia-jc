@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leitor de Currículos</title>
+<style>
+  :root {
+    --fundo: #f4f6fb;
+    --superficie: #ffffff;
+    --borda: #e3e8f0;
+    --texto: #1c2430;
+    --texto-suave: #5b6678;
+    --primaria: #2563eb;
+    --primaria-escura: #1d4ed8;
+    --primaria-clara: #eff4ff;
+    --verde: #059669;
+    --vermelho: #dc2626;
+    --sombra: 0 1px 3px rgba(16, 24, 40, .06), 0 8px 24px rgba(16, 24, 40, .06);
+    --raio: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+  }
+  header.topo {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #3b82f6 100%);
+    color: #fff;
+    padding: 38px 24px 86px;
+    text-align: center;
+  }
+  header.topo h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -.02em; }
+  header.topo p { margin-top: 8px; opacity: .85; font-size: .95rem; }
+  header.topo .selo {
+    display: inline-block; margin-top: 14px; padding: 5px 14px;
+    background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25);
+    border-radius: 999px; font-size: .78rem; font-weight: 600; letter-spacing: .04em;
+  }
+  main { max-width: 880px; margin: -56px auto 60px; padding: 0 20px; }
+
+  /* ---------- upload ---------- */
+  .zona-upload {
+    background: var(--superficie); border: 2px dashed #c3cfe2; border-radius: var(--raio);
+    box-shadow: var(--sombra); padding: 42px 24px; text-align: center;
+    cursor: pointer; transition: border-color .15s, background .15s;
+  }
+  .zona-upload:hover, .zona-upload.arrastando { border-color: var(--primaria); background: var(--primaria-clara); }
+  .zona-upload .icone { font-size: 2.4rem; }
+  .zona-upload h2 { font-size: 1.05rem; margin-top: 10px; font-weight: 600; }
+  .zona-upload p { color: var(--texto-suave); font-size: .85rem; margin-top: 6px; }
+  .zona-upload .botao {
+    display: inline-block; margin-top: 16px; background: var(--primaria); color: #fff;
+    padding: 10px 26px; border-radius: 9px; font-weight: 600; font-size: .9rem;
+    transition: background .15s;
+  }
+  .zona-upload:hover .botao { background: var(--primaria-escura); }
+  #entrada-arquivo { display: none; }
+
+  /* ---------- estados ---------- */
+  .carregando, .erro { display: none; margin-top: 22px; }
+  .carregando.ativo, .erro.ativo { display: block; }
+  .carregando {
+    background: var(--superficie); border-radius: var(--raio); box-shadow: var(--sombra);
+    padding: 34px; text-align: center;
+  }
+  .girador {
+    width: 38px; height: 38px; margin: 0 auto 14px; border-radius: 50%;
+    border: 4px solid var(--primaria-clara); border-top-color: var(--primaria);
+    animation: girar .8s linear infinite;
+  }
+  @keyframes girar { to { transform: rotate(360deg); } }
+  .carregando p { color: var(--texto-suave); font-size: .9rem; }
+  .erro {
+    background: #fef2f2; border: 1px solid #fecaca; color: var(--vermelho);
+    border-radius: var(--raio); padding: 16px 20px; font-size: .9rem;
+  }
+
+  /* ---------- resultado ---------- */
+  #resultado { display: none; margin-top: 26px; }
+  #resultado.ativo { display: block; animation: surgir .3s ease; }
+  @keyframes surgir { from { opacity: 0; transform: translateY(8px); } }
+  .cartao {
+    background: var(--superficie); border-radius: var(--raio); box-shadow: var(--sombra);
+    padding: 24px 26px; margin-bottom: 18px;
+  }
+  .cartao h3 {
+    font-size: .78rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--primaria); margin-bottom: 14px; font-weight: 700;
+  }
+  .cabecalho-cv .nome { font-size: 1.45rem; font-weight: 700; letter-spacing: -.01em; }
+  .cabecalho-cv .titulo-prof { color: var(--texto-suave); margin-top: 3px; font-size: .98rem; }
+  .cabecalho-cv .resumo { margin-top: 14px; font-size: .9rem; line-height: 1.6; color: #3a4456; }
+  .fichas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .ficha {
+    background: var(--primaria-clara); color: var(--primaria-escura);
+    padding: 5px 12px; border-radius: 999px; font-size: .8rem; font-weight: 500;
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .ficha a { color: inherit; text-decoration: none; }
+
+  /* timeline de experiências */
+  .item-exp { position: relative; padding: 0 0 20px 26px; border-left: 2px solid var(--borda); margin-left: 6px; }
+  .item-exp:last-child { padding-bottom: 4px; }
+  .item-exp::before {
+    content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--primaria); border: 3px solid var(--primaria-clara);
+  }
+  .item-exp .cargo { font-weight: 650; font-size: .98rem; }
+  .item-exp .empresa { color: var(--texto-suave); font-size: .88rem; margin-top: 2px; }
+  .item-exp .periodo {
+    display: inline-block; margin-top: 6px; font-size: .76rem; font-weight: 600;
+    background: #f1f5f9; color: #475569; padding: 3px 10px; border-radius: 6px;
+  }
+  .item-exp .periodo.atual { background: #ecfdf5; color: var(--verde); }
+  .item-exp .descricao { margin-top: 8px; font-size: .85rem; line-height: 1.55; color: #4b5563; }
+
+  .item-lista { padding: 12px 0; border-bottom: 1px solid var(--borda); font-size: .9rem; }
+  .item-lista:last-child { border-bottom: none; }
+  .item-lista .principal { font-weight: 600; }
+  .item-lista .secundario { color: var(--texto-suave); font-size: .83rem; margin-top: 2px; }
+  .etiquetas { display: flex; flex-wrap: wrap; gap: 8px; }
+  .etiqueta {
+    background: #f1f5f9; color: #334155; padding: 5px 12px;
+    border-radius: 8px; font-size: .82rem;
+  }
+  .grade-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 640px) { .grade-2 { grid-template-columns: 1fr; } }
+
+  /* ---------- barra de ações ---------- */
+  .acoes { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+  .acoes button {
+    border: 1px solid var(--borda); background: var(--superficie); color: var(--texto);
+    padding: 9px 18px; border-radius: 9px; font-size: .85rem; font-weight: 600;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .acoes button:hover { border-color: var(--primaria); color: var(--primaria); }
+  .acoes .nome-arquivo {
+    margin-left: auto; align-self: center; color: var(--texto-suave); font-size: .82rem;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 45%;
+  }
+  #json-bruto { display: none; }
+  #json-bruto.ativo { display: block; }
+  #json-bruto pre {
+    background: #0f172a; color: #d8e3f3; border-radius: var(--raio);
+    padding: 20px; font-size: .78rem; line-height: 1.5; overflow-x: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .vazio { color: var(--texto-suave); font-size: .85rem; font-style: italic; }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <h1>Leitor de Currículos</h1>
+  <p>Envie um CV em PDF, DOCX, TXT ou imagem e veja a extração estruturada</p>
+  <span class="selo">100% HEURÍSTICO &middot; SEM LLM</span>
+</header>
+
+<main>
+  <div class="zona-upload" id="zona-upload">
+    <div class="icone">&#128196;</div>
+    <h2>Arraste o currículo aqui</h2>
+    <p>ou clique para escolher um arquivo &middot; PDF, DOCX, TXT, MD, PNG, JPG</p>
+    <span class="botao">Selecionar arquivo</span>
+    <input type="file" id="entrada-arquivo" accept=".pdf,.docx,.txt,.md,.png,.jpg,.jpeg,.tiff,.bmp,.webp">
+  </div>
+
+  <div class="carregando" id="carregando">
+    <div class="girador"></div>
+    <p><strong>Extraindo dados...</strong></p>
+    <p style="margin-top:4px">PDFs escaneados passam por OCR e podem levar alguns segundos.</p>
+  </div>
+
+  <div class="erro" id="erro"></div>
+
+  <div id="resultado">
+    <div class="acoes">
+      <button id="botao-novo">&#8634; Novo currículo</button>
+      <button id="botao-json">{ } Ver JSON</button>
+      <button id="botao-copiar">&#128203; Copiar JSON</button>
+      <span class="nome-arquivo" id="nome-arquivo"></span>
+    </div>
+    <div id="json-bruto" class="cartao" style="padding:0"><pre id="json-conteudo"></pre></div>
+    <div id="cartoes"></div>
+  </div>
+</main>
+
+<script>
+const zona = document.getElementById("zona-upload");
+const entrada = document.getElementById("entrada-arquivo");
+const carregando = document.getElementById("carregando");
+const erro = document.getElementById("erro");
+const resultado = document.getElementById("resultado");
+const cartoes = document.getElementById("cartoes");
+const jsonBruto = document.getElementById("json-bruto");
+const jsonConteudo = document.getElementById("json-conteudo");
+let ultimoJson = null;
+
+zona.addEventListener("click", () => entrada.click());
+entrada.addEventListener("change", () => entrada.files[0] && enviar(entrada.files[0]));
+["dragover", "dragenter"].forEach(ev => zona.addEventListener(ev, e => {
+  e.preventDefault(); zona.classList.add("arrastando");
+}));
+["dragleave", "drop"].forEach(ev => zona.addEventListener(ev, e => {
+  e.preventDefault(); zona.classList.remove("arrastando");
+}));
+zona.addEventListener("drop", e => e.dataTransfer.files[0] && enviar(e.dataTransfer.files[0]));
+
+document.getElementById("botao-novo").addEventListener("click", () => {
+  resultado.classList.remove("ativo");
+  erro.classList.remove("ativo");
+  zona.style.display = "block";
+  entrada.value = "";
+});
+document.getElementById("botao-json").addEventListener("click", () => jsonBruto.classList.toggle("ativo"));
+document.getElementById("botao-copiar").addEventListener("click", async (e) => {
+  await navigator.clipboard.writeText(JSON.stringify(ultimoJson, null, 2));
+  e.target.textContent = "\u2713 Copiado!";
+  setTimeout(() => e.target.innerHTML = "&#128203; Copiar JSON", 1800);
+});
+
+async function enviar(arquivo) {
+  erro.classList.remove("ativo");
+  resultado.classList.remove("ativo");
+  zona.style.display = "none";
+  carregando.classList.add("ativo");
+
+  const form = new FormData();
+  form.append("arquivo", arquivo);
+  try {
+    const resp = await fetch("/curriculos", { method: "POST", body: form });
+    const corpo = await resp.json();
+    if (!resp.ok) throw new Error(corpo.detail || `Erro ${resp.status}`);
+    ultimoJson = corpo;
+    renderizar(corpo, arquivo.name);
+  } catch (e) {
+    erro.textContent = "\u26A0\uFE0F " + e.message;
+    erro.classList.add("ativo");
+    zona.style.display = "block";
+  } finally {
+    carregando.classList.remove("ativo");
+  }
+}
+
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function renderizar(cv, nomeArquivo) {
+  document.getElementById("nome-arquivo").textContent = nomeArquivo;
+  jsonConteudo.textContent = JSON.stringify(cv, null, 2);
+  jsonBruto.classList.remove("ativo");
+
+  const c = cv.contato || {};
+  const fichas = [];
+  if (c.email) fichas.push(`&#9993; ${esc(c.email)}`);
+  if (c.telefone) fichas.push(`&#9742; ${esc(c.telefone)}`);
+  if (c.cidade) fichas.push(`&#128205; ${esc(c.cidade)}${c.estado ? " - " + esc(c.estado) : ""}`);
+  if (c.linkedin) fichas.push(`<a href="https://${esc(c.linkedin.replace(/^https?:\/\//, ""))}" target="_blank">in/ LinkedIn</a>`);
+  if (c.github) fichas.push(`<a href="https://${esc(c.github.replace(/^https?:\/\//, ""))}" target="_blank">GitHub</a>`);
+  if (c.site) fichas.push(`<a href="${esc(c.site)}" target="_blank">&#127760; Site</a>`);
+
+  let html = `
+    <div class="cartao cabecalho-cv">
+      <div class="nome">${esc(cv.nome_completo) || '<span class="vazio">Nome n\u00e3o identificado</span>'}</div>
+      ${cv.titulo_profissional ? `<div class="titulo-prof">${esc(cv.titulo_profissional)}</div>` : ""}
+      ${fichas.length ? `<div class="fichas">${fichas.map(f => `<span class="ficha">${f}</span>`).join("")}</div>` : ""}
+      ${cv.resumo ? `<div class="resumo">${esc(cv.resumo)}</div>` : ""}
+    </div>`;
+
+  const exps = cv.experiencias || [];
+  html += `<div class="cartao"><h3>Experi\u00eancia profissional (${exps.length})</h3>`;
+  html += exps.length ? exps.map(e => {
+    const aberto = e.fim && /atual/i.test(e.fim);
+    let periodo = "";
+    if (e.inicio || e.fim) {
+      periodo = `<span class="periodo${aberto ? " atual" : ""}">${esc(e.inicio || "?")} \u2192 ${esc(e.fim || "?")}</span>`;
+    }
+    return `<div class="item-exp">
+      <div class="cargo">${esc(e.cargo) || '<span class="vazio">Cargo n\u00e3o identificado</span>'}</div>
+      ${e.empresa ? `<div class="empresa">${esc(e.empresa)}</div>` : ""}
+      ${periodo}
+      ${e.descricao ? `<div class="descricao">${esc(e.descricao)}</div>` : ""}
+      ${(e.tecnologias || []).length ? `<div class="fichas">${e.tecnologias.map(t => `<span class="ficha">${esc(t)}</span>`).join("")}</div>` : ""}
+    </div>`;
+  }).join("") : '<p class="vazio">Nenhuma experi\u00eancia identificada.</p>';
+  html += `</div>`;
+
+  const fmts = cv.formacoes || [];
+  if (fmts.length) {
+    html += `<div class="cartao"><h3>Forma\u00e7\u00e3o (${fmts.length})</h3>` + fmts.map(f => `
+      <div class="item-lista">
+        <div class="principal">${esc(f.curso || f.instituicao || "")}</div>
+        <div class="secundario">
+          ${[f.curso && f.instituicao ? f.instituicao : null, f.nivel,
+             [f.ano_inicio, f.ano_fim].filter(Boolean).join(" - "), f.situacao]
+            .filter(Boolean).map(esc).join(" \u00b7 ")}
+        </div>
+      </div>`).join("") + `</div>`;
+  }
+
+  const habs = cv.habilidades || [];
+  const idms = cv.idiomas || [];
+  if (habs.length || idms.length) {
+    html += `<div class="grade-2">`;
+    if (habs.length) {
+      html += `<div class="cartao"><h3>Habilidades (${habs.length})</h3>
+        <div class="etiquetas">${habs.map(h => `<span class="etiqueta">${esc(h)}</span>`).join("")}</div></div>`;
+    }
+    if (idms.length) {
+      html += `<div class="cartao"><h3>Idiomas</h3>` + idms.map(i => `
+        <div class="item-lista"><span class="principal">${esc(i.idioma)}</span>
+        ${i.nivel ? `<span class="secundario"> \u2014 ${esc(i.nivel)}</span>` : ""}</div>`).join("") + `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  const certs = cv.certificacoes || [];
+  if (certs.length) {
+    html += `<div class="cartao"><h3>Certifica\u00e7\u00f5es e cursos (${certs.length})</h3>` + certs.map(ct => `
+      <div class="item-lista">
+        <div class="principal">${esc(ct.nome)}</div>
+        ${(ct.emissor || ct.ano) ? `<div class="secundario">${[ct.emissor, ct.ano].filter(Boolean).map(esc).join(" \u00b7 ")}</div>` : ""}
+      </div>`).join("") + `</div>`;
+  }
+
+  if ((cv.projetos || []).length) {
+    html += `<div class="cartao"><h3>Projetos</h3>${cv.projetos.map(p =>
+      `<div class="item-lista">${esc(p)}</div>`).join("")}</div>`;
+  }
+  if (cv.informacoes_adicionais) {
+    html += `<div class="cartao"><h3>Informa\u00e7\u00f5es adicionais</h3>
+      <p style="font-size:.88rem;line-height:1.6;color:#4b5563">${esc(cv.informacoes_adicionais)}</p></div>`;
+  }
+
+  cartoes.innerHTML = html;
+  resultado.classList.add("ativo");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>

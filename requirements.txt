@@ -1,0 +1,14 @@
+# Ingestão
+pdfplumber>=0.11
+pdf2image>=1.17        # requer poppler-utils instalado no sistema
+pytesseract>=0.3.13    # requer tesseract-ocr + tesseract-ocr-por
+python-docx>=1.1
+Pillow>=10.0
+
+# Extração estruturada (heurísticas locais, sem LLM)
+pydantic>=2.7
+
+# API (opcional)
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9

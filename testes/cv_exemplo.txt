@@ -1,0 +1,44 @@
+Ana Beatriz Souza
+Engenheira de Software Sênior
+
+Contato
+Email: ana.souza@example.com | Telefone: (11) 98765-4321
+LinkedIn: linkedin.com/in/anabsouza | GitHub: github.com/anabsouza
+São Paulo - SP, Brasil
+
+Resumo
+Engenheira de software com 9 anos de experiência em backend, dados e
+arquitetura de sistemas distribuídos. Foco em Python, cloud e boas práticas.
+
+Experiência Profissional
+
+Tech Solutions LTDA — Engenheira de Software Sênior
+Mar/2021 - atual
+Liderança técnica de squad de pagamentos. Desenho e implementação de
+microsserviços em Python (FastAPI) e Go, mensageria com Kafka, deploy em AWS.
+Tecnologias: Python, FastAPI, Go, Kafka, AWS, PostgreSQL, Docker, Kubernetes
+
+DataCorp Brasil — Desenvolvedora Backend Pleno
+Jun/2017 - Fev/2021
+Construção de pipelines de dados e APIs REST. Redução de 40% no tempo de
+processamento do ETL principal.
+Tecnologias: Python, Django, Airflow, Spark, Redis
+
+Formação Acadêmica
+Bacharelado em Ciência da Computação — USP (2012 - 2016) — concluído
+Especialização em Arquitetura de Software — PUC-SP (2018 - 2019) — concluído
+
+Habilidades
+Python, Go, SQL, FastAPI, Django, Kafka, AWS, Docker, Kubernetes,
+Arquitetura de microsserviços, Liderança técnica, Comunicação
+
+Idiomas
+Português (nativo), Inglês (avançado), Espanhol (intermediário)
+
+Certificações
+AWS Solutions Architect Associate — Amazon — 2022
+CKA: Certified Kubernetes Administrator — CNCF — 2023
+
+Projetos
+- openpay: biblioteca open source de conciliação de pagamentos (Python)
+- Palestrante na PyCon Brasil 2023: "Kafka sem dor em Python"
